@@ -1,4 +1,4 @@
-openapi: 3.0.0
+topenapi: 3.0.0
 info:
   title: Utopia Airline Ticketing System
   version: "1.0"
@@ -15,7 +15,7 @@ info:
 
     * Travellers
     * Travel agents
-    * Airline counter agents
+    * Airline counter agents.
 servers:
   - url: "http://localhost:3000"
 paths:
