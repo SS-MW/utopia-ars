@@ -1,30 +1,30 @@
 openapi: 3.0.0
 info:
   title: Utopia Airline Ticketing System
-  version: '1.0'
+  version: "1.0"
   contact:
     name: Utopia Support
-    url: 'https://support.utopia.local'
+    url: "https://support.utopia.local"
     email: support@utopia.local
-  termsOfService: 'https://utopia.local/tos'
+  termsOfService: "https://utopia.local/tos"
   license:
     name: License
-    url: 'https://utopia.local/license'
+    url: "https://utopia.local/license"
   description: |-
     This API is designed to manage ticket reservations within Utopia Airlines. It can be used by:
 
     * Travellers
     * Travel agents
-    * Airline counter agents.
+    * Airline counter agents
 servers:
-  - url: 'http://localhost:3000'
+  - url: "http://localhost:3000"
 paths:
   /account/register:
     post:
       summary: Create an account
       operationId: post-account-register
       responses:
-        '201':
+        "201":
           description: OK
       description: |-
         This endpoint creates a user account. Accessible to:
@@ -48,7 +48,7 @@ paths:
                   type: string
                   default: 01-01-2020
                   format: date
-                  example: '2020-01-13'
+                  example: "2020-01-13"
                   pattern: "[\\d{4}\\-\\d{2}\\-\\d{2}]"
                 streetAddress1:
                   type: string
@@ -86,7 +86,7 @@ paths:
       summary: Login to an existing user account
       operationId: post-account-login
       responses:
-        '200':
+        "200":
           description: OK
       description: This endpoint authenticates a submitted login attempt and returns a JWT token if successful.
     parameters: []
@@ -96,4 +96,4 @@ components:
     JWT Token:
       type: http
       scheme: bearer
-      description: '? Self hosted auth server | AWS Cognito ?'
+      description: "? Self hosted auth server | AWS Cognito ?"
