@@ -17,7 +17,7 @@ get:
       description: "invalid operation"
 post:
   tags:
-  - "itineraries"
+  - "Agent"
   summary: "Create a new itinerary from counter"
   description: "Create a new itinerary record"
   operationId: "post-agent-itineraries"
