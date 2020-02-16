@@ -1,8 +1,8 @@
 ---
 get:
   tags:
-  - "itineraries"
-  summary: "Return information about a traveler"
+  - "counter"
+  summary: "Return information about a itinerary"
   description: "Return travelerId, agencyId, userId, and total price for an itinerary."
   operationId: "get-counter-itineraries_itineraryId"
   produces:
@@ -28,7 +28,7 @@ get:
     
 put:
   tags:
-  - "itineraries"
+  - "counter"
   summary: "Update the status of an itinerary to canceled"
   description: "Update the status for all tickets associated with the itinerary to canceled."
   operationId: "put-counter-itineraries_itineraryId"
