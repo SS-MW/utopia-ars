@@ -1,5 +1,7 @@
 ---
 get:
+  tags:
+  - "Travelers"
   summary: "Return the list of entire travelers in the database record"
   description: ""
   operationId: "get-counter-travelers"
@@ -17,7 +19,7 @@ get:
       description: "invalid operation"
 post:
   tags:
-  - "travelers"
+  - "Travelers"
   summary: "Create a new traveler from counter"
   description: "Create a new traveler record"
   operationId: "post-counter-travelers"
