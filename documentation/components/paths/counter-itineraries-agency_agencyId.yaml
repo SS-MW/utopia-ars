@@ -1,0 +1,30 @@
+---
+get:
+  tags:
+  - "Counter"
+  summary: "Return the list of itineraries of a specific Agency"
+  description: "Returns the list of itineraries of a specific agency"
+  operationId: "get-counter-itineraries-agency_agencyId"
+  produces:
+  - "application/xml"
+  - "application/json"
+  parameters:
+  - name: "agencyId"
+    in: "path"
+    description: "agencyId"
+    required: true
+    schema:
+      type: integer
+      format: int64
+  responses:
+    200:
+      description: "successful operation"
+      schema:
+        type: "array"
+        items:
+          $ref: "../definitions/itinerary.yaml"
+    400:
+      description: "Invalid id supplied."
+    404:
+      description: "Agency not found."
+...
