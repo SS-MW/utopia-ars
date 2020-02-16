@@ -1,0 +1,20 @@
+get:
+  tags: 
+  - "travelers"
+  summary: "Return the list of entire travelers in the database record"
+  description: ""
+  operationId: get-counter-travelers
+  produces:
+  - "application/xml"
+  - "application/json"
+  responses:
+    200:
+      description: "successful operation"
+      schema:
+        type: "array"
+        items: 
+          $ref: ""
+    400:
+      description: "invalid operation"
+put:
+delete:
