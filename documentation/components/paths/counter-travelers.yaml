@@ -1,3 +1,4 @@
+---
 get:
   summary: "Return the list of entire travelers in the database record"
   description: ""
@@ -33,4 +34,4 @@ post:
     required: true
     schema:
       $ref: "components/definitions/traveler.yaml"
-
+...
