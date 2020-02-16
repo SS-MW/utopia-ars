@@ -3,7 +3,7 @@ get:
   - "travelers"
   summary: "Return the list of entire travelers in the database record"
   description: ""
-  operationId: get-counter-travelers
+  operationId: "get-counter-travelers"
   produces:
   - "application/xml"
   - "application/json"
@@ -16,5 +16,24 @@ get:
           $ref: ""
     400:
       description: "invalid operation"
+post:
+  tags:
+  - "travelers"
+  summary: "Create a new traveler from counter"
+  description: "Create a new traveler record"
+  operationId: "post-counter-travelers"
+  consumes:
+  - "application/xml"
+  - "application/json"
+  produces:
+  - "application/xml"
+  - "application/json"
+  parameters:
+  - in: "body"
+    name: "body"
+    description: "create new traveler from counter"
+    required: true
+    schema:
+      $ref: "components/definitions/traveler.yaml"
 put:
 delete:
