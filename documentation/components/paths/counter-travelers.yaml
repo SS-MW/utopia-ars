@@ -19,7 +19,7 @@ get:
       description: "invalid operation"
 post:
   tags:
-  - "Travelers"
+  - "travelers"
   summary: "Create a new traveler from counter"
   description: "Create a new traveler record"
   operationId: "post-counter-travelers"
