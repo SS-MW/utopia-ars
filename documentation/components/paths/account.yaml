@@ -1,3 +1,4 @@
+---
 post:
   tags:
     - account
@@ -16,3 +17,4 @@ JWT Token:
   type: http
   scheme: bearer
   description: "? Self hosted auth server | AWS Cognito ?"
+...
