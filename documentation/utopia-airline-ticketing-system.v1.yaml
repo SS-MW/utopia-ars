@@ -21,8 +21,8 @@ servers:
 paths:
   /account/register:
     $ref: "components/paths/account-register.yaml"
-  /accounts:
-    $ref: "components/paths/accounts.yaml"
+  /account:
+    $ref: "components/paths/account.yaml"
   /online/itineraries:
     $ref: "components/paths/online-itineraries.yaml"
   /online/itineraries/{itineraryID}:
