@@ -1,0 +1,21 @@
+---
+get:
+  tags:
+  - "Flights"
+  summary: "Return a list of flights based on parameters"
+  description: "Return a list of flights based on parameters set."
+  operationId: "get-counter-flights"
+  consumes:
+  - "application/xml"
+  - "application/json"
+  produces: 
+  - "application/xml"
+  - "application/json"
+  parameters:
+  - in: "body"
+    name: "body"
+    description: "list of parameters for flight; if there are none, list al"
+    required: false
+    schema:
+      $ref: "../definitions/flight.yaml"
+...
