@@ -1,6 +1,6 @@
+tags:
+- "Travelers"
 get:
-  tags:
-  - "Travelers"
   summary: "Return the list of entire travelers in the database record"
   description: ""
   operationId: get-counter-travelers
