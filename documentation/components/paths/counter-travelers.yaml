@@ -36,4 +36,9 @@ post:
     required: true
     schema:
       $ref: "../definitions/traveler.yaml"
+  responses:
+    201:
+      description: "travelers created"
+    400:
+      description: "Invalid parameter posted"
 ...

@@ -18,4 +18,13 @@ get:
     required: false
     schema:
       $ref: "../definitions/flight.yaml"
+  responses:
+    200:
+      description: "Successful operation"
+      schema:
+        type: "array"
+        items:
+          $ref: "../definitions/flight.yaml"
+    400:
+      description: "Invalid operation"
 ...
