@@ -1,0 +1,58 @@
+---
+get:
+  tags:
+  - "Travelers"
+  summary: "Return information about a traveler"
+  description: "Return first name, last name, date of birth, etc. about a traveler."
+  operationId: "get-counter-travelers_travelerId"
+  produces:
+  - "application/xml"
+  - "application/json"
+  parameters:
+  - name: "travelerId"
+    in: "path"
+    description: "Traveler Id"
+    required: true
+    schema:
+      type: integer
+      format: int64
+  responses:
+    200:
+      description: "successful operation"
+      schema:
+        $ref: "components/definitions/traveler.yaml"
+    400:
+      description: "Invalid id supplied"
+    404:
+      description: "Traveler not found"
+    
+put:
+  tags:
+  - "Travelers"
+  summary: "Update information about a traveler"
+  description: "Update first name, last name, date of birth, etc. about a traveler."
+  operationId: "put-counter-travelers_travelerId"
+  consumes:
+  - "application/xml"
+  - "application/json"
+  produces:
+  - "application/xml"
+  - "application/json"
+  parameters:
+  - name: "travelerId"
+    in: "path"
+    description: "Traveler Id"
+    required: true
+    schema:
+      type: integer
+      format: int64
+  responses:
+    200:
+      description: "successful operation"
+      schema:
+        $ref: "components/definitions/traveler.yaml"
+    400:
+      description: "Invalid id supplied"
+    404:
+      description: "Traveler not found"
+...
