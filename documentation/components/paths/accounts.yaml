@@ -1,0 +1,15 @@
+post:
+  summary: Login to an existing user account
+  operationId: post-account-login
+  responses:
+    "200":
+      description: OK
+  description: This endpoint authenticates a submitted login attempt and returns a JWT token if successful.
+parameters: []
+components:
+schemas: {}
+securitySchemes:
+JWT Token:
+  type: http
+  scheme: bearer
+  description: "? Self hosted auth server | AWS Cognito ?"
