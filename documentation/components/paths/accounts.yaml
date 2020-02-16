@@ -5,6 +5,8 @@ post:
     "200":
       description: OK
   description: This endpoint authenticates a submitted login attempt and returns a JWT token if successful.
+  tags:
+    - Account
 parameters: []
 components:
 schemas: {}
@@ -13,5 +15,3 @@ JWT Token:
   type: http
   scheme: bearer
   description: "? Self hosted auth server | AWS Cognito ?"
-tags:
-  - Account
