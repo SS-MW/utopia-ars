@@ -32,5 +32,5 @@ post:
     description: "create new itinerary from counter"
     required: true
     schema:
-      $ref: "components/definitions/itinerary.yaml"
+      $ref: "../definitions/itinerary.yaml"
 ...
