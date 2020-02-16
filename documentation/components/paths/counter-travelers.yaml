@@ -1,6 +1,6 @@
 get:
-  tags: 
-  - "travelers"
+  tags:
+  - "Travelers"
   summary: "Return the list of entire travelers in the database record"
   description: ""
   operationId: get-counter-travelers
@@ -12,7 +12,7 @@ get:
       description: "successful operation"
       schema:
         type: "array"
-        items: 
+        items:
           $ref: ""
     400:
       description: "invalid operation"

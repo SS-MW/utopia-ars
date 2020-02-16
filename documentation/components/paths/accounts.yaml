@@ -1,12 +1,13 @@
 post:
+  tags:
+    - Account
   summary: Login to an existing user account
   operationId: post-account-login
   responses:
     "200":
       description: OK
   description: This endpoint authenticates a submitted login attempt and returns a JWT token if successful.
-  tags:
-    - Account
+
 parameters: []
 components:
 schemas: {}
