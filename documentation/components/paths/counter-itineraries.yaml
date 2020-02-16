@@ -2,7 +2,7 @@
 get:
   tags:
   - "Counter"
-  summary: "Return the list of all itineraries in the database"
+  summary: "Return a list of all itineraries in the database"
   description: ""
   operationId: "get-counter-itineraries"
   produces:
