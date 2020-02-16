@@ -1,7 +1,7 @@
 ---
 get:
   tags:
-  - "Flights"
+  - "Counter"
   summary: "Return a list of flights based on parameters"
   description: "Return a list of flights based on parameters set."
   operationId: "get-counter-flights"

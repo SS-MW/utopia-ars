@@ -1,7 +1,7 @@
 ---
 get:
   tags:
-  - "Travelers"
+  - "Counter"
   summary: "Return information about a traveler"
   description: "Return first name, last name, date of birth, etc. about a traveler."
   operationId: "get-counter-travelers_travelerId"
@@ -28,7 +28,7 @@ get:
     
 put:
   tags:
-  - "Travelers"
+  - "Counter"
   summary: "Update information about a traveler"
   description: "Update first name, last name, date of birth, etc. about a traveler."
   operationId: "put-counter-travelers_travelerId"

@@ -1,7 +1,7 @@
 ---
 get:
   tags:
-  - "Agency"
+  - "Counter"
   summary: "Return the list of itineraries of a specific Agency"
   description: "Returns the list of itineraries of a specific agency"
   operationId: "get-counter-itineraries-agency_agencyId"
