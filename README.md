@@ -1,2 +1,2 @@
-# utopia-ats
-Utopia: Airline Ticketing System
+# utopia-ars
+Utopia: Airline Reservation System
