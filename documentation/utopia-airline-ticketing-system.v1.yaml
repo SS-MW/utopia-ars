@@ -54,8 +54,6 @@ paths:
   /counter/itineraries/tickets/{ticketID}:
     $ref: "components/paths/counter-itineraries-tickets_ticketId.yaml"
   /counter/travelers:
-    tags:
-    - "Travelers"
     $ref: "components/paths/counter-travelers.yaml"
   /counter/itineraries/agency/{agencyID}:
     $ref: "components/paths/counter-itineraries-agency_agencyId.yaml"
