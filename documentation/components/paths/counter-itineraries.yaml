@@ -1,0 +1,36 @@
+get:
+  tags:
+  - "itineraries"
+  summary: "Return the list of all itineraries in the database"
+  description: ""
+  operationId: "get-counter-itineraries"
+  produces:
+  - "application/xml"
+  - "application/json"
+  responses:
+    200:
+      description: "successful operation"
+      schema:
+        type: "array"
+    400:
+      description: "invalid operation"
+post:
+  tags:
+  - "itineraries"
+  summary: "Create a new itinerary from counter"
+  description: "Create a new itinerary record"
+  operationId: "post-counter-itineraries"
+  consumes:
+  - "application/xml"
+  - "application/json"
+  produces:
+  - "application/xml"
+  - "application/json"
+  parameters:
+  - in: "body"
+    name: "body"
+    description: "create new itinerary from counter"
+    required: true
+    schema:
+      $ref: "components/definitions/itinerary.yaml"
+...
