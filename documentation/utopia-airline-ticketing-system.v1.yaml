@@ -18,6 +18,7 @@ info:
     * Airline counter agents.
 servers:
   - url: "http://localhost:3000"
+basePath: /api/v1
 paths:
   /account:
     $ref: "components/paths/account.yaml"
