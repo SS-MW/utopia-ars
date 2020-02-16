@@ -35,5 +35,5 @@ post:
     description: "create new traveler from counter"
     required: true
     schema:
-      $ref: "../components/definitions/traveler.yaml"
+      $ref: "../definitions/traveler.yaml"
 ...
