@@ -1,5 +1,3 @@
-tags:
-- "Travelers"
 get:
   summary: "Return the list of entire travelers in the database record"
   description: ""
