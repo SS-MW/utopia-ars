@@ -1,0 +1,30 @@
+---
+get:
+  tags:
+  - "Online"
+  summary: "Return a list of itineraries  that a traveler has booked."
+  description: "Return travelerId, agencyId, userId, and total price for every itinerary that the traveler has booked."
+  operationId: "get-counter-itineraries-travelers_travelerId"
+  produces:
+  - "application/xml"
+  - "application/json"
+  parameters:
+  - name: "travelerId"
+    in: "path"
+    description: "Traveler Id"
+    required: true
+    schema:
+      type: integer
+      format: int64
+  responses:
+    200:
+      description: "successful operation"
+      schema:
+        type: "array"
+        items:
+          $ref: "../definitions/itinerary.yaml"
+    400:
+      description: "Invalid id supplied"
+    404:
+      description: "itinerary not found"
+...
