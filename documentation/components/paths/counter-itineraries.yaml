@@ -1,8 +1,8 @@
 ---
 get:
   tags:
-  - "itineraries"
-  summary: "Return the list of all itineraries in the database"
+  - "Counter"
+  summary: "Return a list of all itineraries in the database"
   description: ""
   operationId: "get-counter-itineraries"
   produces:
@@ -13,11 +13,14 @@ get:
       description: "successful operation"
       schema:
         type: "array"
+        items:
+          $ref: "../definitions/itinerary.yaml"
     400:
       description: "invalid operation"
+
 post:
   tags:
-  - "itineraries"
+  - "Counter"
   summary: "Create a new itinerary from counter"
   description: "Create a new itinerary record"
   operationId: "post-counter-itineraries"
