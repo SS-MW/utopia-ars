@@ -14,7 +14,7 @@ get:
       schema:
         type: "array"
         items:
-          $ref: "#/components/definitions/traveler.yaml"
+          $ref: ".../definitions/traveler.yaml"
     400:
       description: "invalid operation"
 post:
@@ -35,5 +35,5 @@ post:
     description: "create new traveler from counter"
     required: true
     schema:
-      $ref: "#/components/definitions/traveler.yaml"
+      $ref: ".../components/definitions/traveler.yaml"
 ...
