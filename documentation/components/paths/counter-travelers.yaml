@@ -11,7 +11,7 @@ get:
       schema:
         type: "array"
         items:
-          $ref: ""
+          $ref: "components/definitions/traveler.yaml"
     400:
       description: "invalid operation"
 post:
@@ -33,5 +33,4 @@ post:
     required: true
     schema:
       $ref: "components/definitions/traveler.yaml"
-put:
-delete:
+
