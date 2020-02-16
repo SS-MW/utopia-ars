@@ -1,7 +1,7 @@
 ---
 get:
   tags:
-  - "counter"
+  - "Counter"
   summary: "Return the list of all itineraries in the database"
   description: ""
   operationId: "get-counter-itineraries"
@@ -20,7 +20,7 @@ get:
 
 post:
   tags:
-  - "counter"
+  - "Counter"
   summary: "Create a new itinerary from counter"
   description: "Create a new itinerary record"
   operationId: "post-counter-itineraries"

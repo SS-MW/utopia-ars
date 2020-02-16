@@ -1,7 +1,7 @@
 ---
 get:
   tags:
-  - "counter"
+  - "Counter"
   summary: "Return a list of itineraries  that a traveler has booked."
   description: "Return travelerId, agencyId, userId, and total price for every itinerary that the traveler has booked."
   operationId: "get-counter-itineraries-travelers_travelerId"
