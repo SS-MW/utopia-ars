@@ -14,7 +14,7 @@ get:
   parameters:
   - in: "body"
     name: "body"
-    description: "list of parameters for flight; if there are none, list al"
+    description: "list of parameters for flight; if there are none, list all flights"
     required: false
     schema:
       $ref: "../definitions/flight.yaml"

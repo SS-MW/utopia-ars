@@ -11,7 +11,7 @@ get:
   parameters:
   - name: "ticketId"
     in: "path"
-    description: "agencyId"
+    description: "The id of ticket"
     required: true
     schema:
       type: integer
