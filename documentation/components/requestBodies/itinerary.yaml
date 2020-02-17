@@ -37,7 +37,7 @@ properties:
             - seat_number
             description: A ticket object that includes a flight number and seat number on that flight associated with an itinerary
             properties:
-              user_id:
+              flight_number:
                 type: integer
                 format: int64
               seat_number:
