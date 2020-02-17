@@ -33,20 +33,15 @@ properties:
           items:
             type: object
             required:
-            - ticket
-            description: A top level identifier for a ticket object that is apart of an itinerary.
-            ticket:
-              type: object
-              required:
-              - flight_number
-              - seat_number
-              description: A ticket object that includes a flight number and seat number on that flight
-              properties:
-                user_id:
-                  type: integer
-                  format: int64
-                seat_number:
-                  type: string
-                  min: 2
-                  pattern: '^\d*[a-zA-Z]$'
+            - flight_number
+            - seat_number
+            description: A ticket object that includes a flight number and seat number on that flight associated with an itinerary
+            properties:
+              user_id:
+                type: integer
+                format: int64
+              seat_number:
+                type: string
+                min: 2
+                pattern: "^\d*[a-zA-Z]$"
 ...
