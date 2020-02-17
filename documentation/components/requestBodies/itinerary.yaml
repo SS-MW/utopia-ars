@@ -42,5 +42,5 @@ properties:
                 format: int64
               seat_number:
                 type: string
-                pattern: "^\d*[a-zA-Z]$"
+                pattern: "^\\d*[a-zA-Z]$"
 ...
