@@ -1,0 +1,32 @@
+---
+post:
+  tags:
+    - Account
+  summary: Login to an existing user account
+  description: This endpoint authenticates a submitted login attempt and returns a JWT token if successful.
+  operationId: post-account-login
+    consumes:
+    - "application/xml"
+    - "application/json"
+    produces:
+    - "application/xml"
+    - "application/json"
+  responses:
+    "200":
+      description: OK
+  requestBody:
+    description: "Login to account."
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: "../requestBodies/account.yaml"
+
+components:
+  schemas: {}
+  securitySchemes:
+  JWT Token:
+    type: http
+    scheme: bearer
+    description: "? Self hosted auth server | AWS Cognito ?"
+...

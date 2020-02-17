@@ -1,0 +1,18 @@
+---
+type: object
+properties:
+  departure_date:
+    type: date
+  arrival_date:
+    type: date
+  destination:
+    type: string
+  origin:
+    type: string
+  capacity:
+    type: integer
+    format: int32
+  price:
+    type: integer
+    format: double
+...

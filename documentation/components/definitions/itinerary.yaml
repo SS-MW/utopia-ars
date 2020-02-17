@@ -1,0 +1,26 @@
+---
+required:
+  - id
+  - traveler_id
+  - user_id
+  - agency_id
+  - price_total
+type: object
+properties:
+  id:
+    type: integer
+    format: int64
+  traveler_id:
+    type: integer
+    format: int64
+  user_id:
+    type: integer
+    format: int64
+  agency_id:
+    type: integer
+    format: int64
+  price_total:
+    type: integer
+    format: double
+
+...

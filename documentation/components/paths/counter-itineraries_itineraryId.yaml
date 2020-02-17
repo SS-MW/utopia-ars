@@ -1,0 +1,58 @@
+---
+get:
+  tags:
+  - "Counter"
+  summary: "Return information about a itinerary"
+  description: "Return travelerId, agencyId, userId, and total price for an itinerary."
+  operationId: "get-counter-itineraries_itineraryId"
+  produces:
+  - "application/xml"
+  - "application/json"
+  parameters:
+  - name: "itineraryId"
+    in: "path"
+    description: "Itinerary Id"
+    required: true
+    schema:
+      type: integer
+      format: int64
+  responses:
+    200:
+      description: "successful operation"
+      schema:
+        $ref: "../definitions/itinerary.yaml"
+    400:
+      description: "Invalid id supplied"
+    404:
+      description: "itinerary not found"
+
+put:
+  tags:
+  - "Counter"
+  summary: "Update the status of an itinerary to canceled"
+  description: "Update the status for all tickets associated with the itinerary to canceled."
+  operationId: "put-counter-itineraries_itineraryId"
+  consumes:
+  - "application/xml"
+  - "application/json"
+  produces:
+  - "application/xml"
+  - "application/json"
+  parameters:
+  - name: "itineraryId"
+    in: "path"
+    description: "Itinerary Id"
+    required: true
+    schema:
+      type: integer
+      format: int64
+  responses:
+    200:
+      description: "successful operation"
+      schema:
+        $ref: "../definitions/itinerary.yaml"
+    400:
+      description: "Invalid id supplied"
+    404:
+      description: "itinerary not found"
+...
