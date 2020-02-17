@@ -42,6 +42,5 @@ properties:
                 format: int64
               seat_number:
                 type: string
-                min: 2
                 pattern: "^\d*[a-zA-Z]$"
 ...
