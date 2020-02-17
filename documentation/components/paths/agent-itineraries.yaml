@@ -27,14 +27,18 @@ post:
   produces:
   - "application/xml"
   - "application/json"
-  parameters:
-  - in: "body"
-    name: "body"
+  responses:
+    201:
+      description: "Itinerary created"
+  requestBody:
     description: "create new itinerary from counter"
     required: true
-    schema:
-      $ref: "../definitions/itinerary.yaml"
-    responses:
-      201:
-        description: "Itinerary created"
+    content:
+      application/json:
+        schema:
+          $ref: "../definitions/itinerary.yaml"
+      application/xml:
+        schema:
+          $ref: "../definitions/itinerary.yaml"
+
 ...

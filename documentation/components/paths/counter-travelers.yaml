@@ -44,12 +44,5 @@ post:
       application/xml:
         schema:
           $ref: "../definitions/traveler.yaml"
-  #
-  # parameters:
-  # - in: "body"
-  #   name: "body"
-  #   description: "create new traveler from counter"
-  #   required: true
-  #   schema:
-  #     $ref: "../definitions/traveler.yaml"
+          
 ...
