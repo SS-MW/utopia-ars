@@ -2,7 +2,7 @@
 type: object
 required:
 - username
-- string
+- password
 description:
 properties:
   username:

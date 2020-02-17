@@ -7,6 +7,15 @@ post:
   responses:
     "200":
       description: OK
+      schema:
+        type: object
+        properties:
+          result:
+            type: string
+            description: Authentication attempt result.
+          token:
+            type: string
+            description: Placeholder for JWT token.
       examples:
         application/json:
           {
