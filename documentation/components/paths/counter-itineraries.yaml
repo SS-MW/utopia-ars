@@ -35,7 +35,6 @@ post:
       description: OK
   requestBody:
     description: "Create a new online user account."
-    required: true
     content:
       application/json:
         schema:
@@ -45,7 +44,7 @@ post:
           $ref: "../definitions/itinerary.yaml"
           required:
             - traveler_id
-            -   user_id
+            - user_id
 
 
 
