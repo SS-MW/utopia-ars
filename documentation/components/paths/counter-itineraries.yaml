@@ -43,6 +43,9 @@ post:
       application/xml:
         schema:
           $ref: "../definitions/itinerary.yaml"
+          required:
+            - traveler_id
+            -   user_id
 
 
 
