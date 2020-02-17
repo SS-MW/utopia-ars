@@ -5,7 +5,7 @@ post:
   summary: Login to an existing user account
   operationId: post-account-login
   responses:
-    "200":
+    "201":
       description: OK
       schema:
         type: object
