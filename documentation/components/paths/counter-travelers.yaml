@@ -29,16 +29,27 @@ post:
   produces:
   - "application/xml"
   - "application/json"
-  parameters:
-  - in: "body"
-    name: "body"
-    description: "create new traveler from counter"
-    required: true
-    schema:
-      $ref: "../definitions/traveler.yaml"
   responses:
     201:
       description: "travelers created"
     400:
       description: "Invalid parameter posted"
+  requestBody:
+    description: "create new traveler from counter"
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: "../definitions/traveler.yaml"
+      application/xml:
+        schema:
+          $ref: "../definitions/traveler.yaml"
+  #
+  # parameters:
+  # - in: "body"
+  #   name: "body"
+  #   description: "create new traveler from counter"
+  #   required: true
+  #   schema:
+  #     $ref: "../definitions/traveler.yaml"
 ...
