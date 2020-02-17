@@ -1,4 +1,10 @@
 ---
+required:
+  - id
+  - traveler_id
+  - user_id
+  - agency_id
+  - price_total
 type: object
 properties:
   id:
@@ -16,4 +22,5 @@ properties:
   price_total:
     type: integer
     format: double
+
 ...

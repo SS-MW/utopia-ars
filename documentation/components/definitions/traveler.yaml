@@ -1,4 +1,16 @@
 ---
+required:
+  - id
+  - first_name
+  - last_name
+  - dob
+  - phone
+  - email
+  - street
+  - country
+  - state
+  - city
+  - postal_code
 type: object
 properties:
   id:

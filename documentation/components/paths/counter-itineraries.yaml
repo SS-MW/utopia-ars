@@ -30,11 +30,17 @@ post:
   produces:
   - "application/xml"
   - "application/json"
-  parameters:
-  - in: "body"
-    name: "body"
-    description: "create new itinerary from counter"
+  responses:
+    "201":
+      description: OK
+  requestBody:
+    description: "Create a new online user account."
     required: true
-    schema:
-      $ref: "../definitions/itinerary.yaml"
+    content:
+      application/json:
+        schema:
+          $ref: "../definitions/itinerary.yaml"
+      application/xml:
+        schema:
+          $ref: "../definitions/itinerary.yaml"
 ...
