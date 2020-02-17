@@ -40,6 +40,9 @@ post:
       application/json:
         schema:
           $ref: "../definitions/itinerary.yaml"
+      application/xml:
+        schema:
+          $ref: "../definitions/itinerary.yaml"
 
 
 
