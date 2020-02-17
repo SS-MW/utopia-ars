@@ -16,4 +16,8 @@ properties:
   price_total:
     type: integer
     format: double
+  required:
+    - traveler_id
+    - user_id
+
 ...
