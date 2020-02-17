@@ -39,8 +39,8 @@ post:
     content:
       application/json:
         schema:
-          $ref: "../definitions/itinerary.yaml"
+          $ref: "../requestBodies/itinerary.yaml"
       application/xml:
         schema:
-          $ref: "../definitions/itinerary.yaml"
+          $ref: "../requestBodies/itinerary.yaml"
 ...
