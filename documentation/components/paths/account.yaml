@@ -8,6 +8,16 @@ post:
     "200":
       description: OK
   description: This endpoint authenticates a submitted login attempt and returns a JWT token if successful.
+  requestBody:
+    description: "send credentials for authentication"
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: "../requestBodies/account.yaml"
+      application/xml:
+        schema:
+          $ref: "../requestBodies/account.yaml"
 
 parameters: []
 components:
