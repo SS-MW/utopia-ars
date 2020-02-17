@@ -1,18 +1,18 @@
 ---
 post:
   tags:
-    - account
-  summary: Create an account
+    - Account
   operationId: post-account-register
-  responses:
-    "201":
-      description: OK
+  summary: Create an account
   description: |-
     This endpoint creates a user account. Accessible to:
 
     * Traveller
     * Travel agent
     * Airline counter agent
+  responses:
+    "201":
+      description: OK
   requestBody:
     content:
       application/json:

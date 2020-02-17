@@ -1,7 +1,7 @@
 ---
 post:
   tags:
-    - account
+    - Account
   summary: Login to an existing user account
   operationId: post-account-login
   responses:
