@@ -16,12 +16,12 @@ post:
           token:
             type: string
             description: Placeholder for JWT token.
-      examples:
-        application/json:
-          {
-            "result": "success",
-            "token": "TOKEN HERE"
-          }
+        examples:
+          application/json:
+            {
+              "result": "success",
+              "token": "TOKEN HERE"
+            }
   description: This endpoint authenticates a submitted login attempt and returns a JWT token if successful.
   requestBody:
     description: "send credentials for authentication"
