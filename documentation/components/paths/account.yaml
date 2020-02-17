@@ -7,19 +7,20 @@ post:
   responses:
     "201":
       description: OK
-      schema:
-        type: object
-        properties:
-          result:
-            type: string
+      content:
+        application/json:
+          schema:
+            type: object
             description: Authentication attempt result.
-          token:
-            type: string
-            description: Placeholder for JWT token.
-        examples:
-          application/json:
-            result: "success"
-            token": "TOKEN HERE"
+            properties:
+              result:
+                type: string
+              token:
+                type: string
+                description: Placeholder for JWT token.
+            example:
+                result: "success"
+                token": "TOKEN HERE"
 
   description: This endpoint authenticates a submitted login attempt and returns a JWT token if successful.
   requestBody:
