@@ -5,9 +5,34 @@ post:
   summary: Login to an existing user account
   operationId: post-account-login
   responses:
-    "200":
+    "201":
       description: OK
+      schema:
+        type: object
+        properties:
+          result:
+            type: string
+            description: Authentication attempt result.
+          token:
+            type: string
+            description: Placeholder for JWT token.
+        examples:
+          application/json:
+            {
+              "result": "success",
+              "token": "TOKEN HERE"
+            }
   description: This endpoint authenticates a submitted login attempt and returns a JWT token if successful.
+  requestBody:
+    description: "send credentials for authentication"
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: "../requestBodies/account.yaml"
+      application/xml:
+        schema:
+          $ref: "../requestBodies/account.yaml"
 
 parameters: []
 components:
