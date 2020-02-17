@@ -4,7 +4,7 @@ required:
 - user_id
 - travelers
 description: |-
-  Contains  a user_id of who created the itineraries, and a collection of travelers each associated with their individual itinerary.
+  Contains  a user_id for who created the itineraries, and a collection of travelers each associated with their individual itinerary.
 
   Note:  
   An agency_id is not required, but as a travel agent posts, it will require that an agency_id is included in the request, this will be enforced by the API.  
@@ -34,11 +34,19 @@ properties:
             type: object
             required:
             - ticket
-            description: A top level idetifier for a ticket object that is apart of an itinerary.
+            description: A top level identifier for a ticket object that is apart of an itinerary.
             ticket:
               type: object
               required:
-              - 
-              - 
-
+              - flight_number
+              - seat_number
+              description: A ticket object that includes a flight number and seat number on that flight
+              properties:
+                user_id:
+                  type: integer
+                  format: int64
+                seat_number:
+                  type: string
+                  min: 2
+                  pattern: '^\d*[a-zA-Z]$'
 ...
