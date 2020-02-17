@@ -43,12 +43,4 @@ post:
       application/xml:
         schema:
           $ref: "../definitions/itinerary.yaml"
-
-  # parameters:
-  # - in: "body"
-  #   name: "body"
-  #   description: "create new itinerary from counter"
-  #   required: true
-  #   schema:
-  #     $ref: "../definitions/itinerary.yaml"
 ...
