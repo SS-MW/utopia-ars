@@ -34,7 +34,12 @@ post:
     "201":
       description: OK
   requestBody:
-    $ref: "../definitions/itinerary.yaml"
+    description: "Create a new online user account."
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: "../definitions/itinerary.yaml"
 
 
 
