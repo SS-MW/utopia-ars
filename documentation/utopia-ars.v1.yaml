@@ -18,6 +18,7 @@ info:
     * Airline counter agents.
 servers:
   - url: "http://localhost:3000"
+
 paths:
 
   /account:
@@ -27,8 +28,8 @@ paths:
 
   /online/itineraries:
     $ref: "components/paths/online-itineraries.yaml"
-  /online/itinerary/{itinerary_id}:
-    $ref: "components/paths/online-itinerary_itineraryId.yaml"
+  /online/itineraries/{itinerary_id}:
+    $ref: "components/paths/online-itineraries_itineraryId.yaml"
   /online/itinerary/tickets/{ticket_id}:
     $ref: "components/paths/online-itineraries-tickets_ticketId.yaml"
   /online/flights?{params...}:
