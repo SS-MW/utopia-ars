@@ -4,11 +4,11 @@ get:
   - "Online"
   summary: "Return a list of flights based on parameters"
   description: "Return a list of flights based on parameters set."
-  operationId: "get-counter-flights"
+  operationId: "get-online-flights"
   consumes:
   - "application/xml"
   - "application/json"
-  produces: 
+  produces:
   - "application/xml"
   - "application/json"
   parameters:
