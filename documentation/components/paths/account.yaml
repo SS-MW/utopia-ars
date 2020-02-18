@@ -2,16 +2,17 @@
 post:
   tags:
     - Account
-  summary: Login to an existing user account.
   operationId: post-account-login
+  summary: "Login to an existing user account."
+  description: "This endpoint authenticates a submitted login attempt and returns a JWT token if successful."
   responses:
-    "201":
+    201:
       description: OK
       content:
         application/json:
           schema:
             type: object
-            description: Authentication attempt result.
+            description: "Authentication successful."
             properties:
               result:
                 type: string
@@ -20,11 +21,12 @@ post:
                 description: Placeholder for JWT token.
             example:
                 result: "success"
-                token": "TOKEN HERE"
+                token: "TOKEN HERE"
+    401:
+      description: "Authorization information is missing or invalid."
 
-  description: This endpoint authenticates a submitted login attempt and returns a JWT token if successful.
   requestBody:
-    description: "send credentials for authentication"
+    description: "Send credentials for authentication"
     required: true
     content:
       application/json:
@@ -36,10 +38,10 @@ post:
 
 parameters: []
 components:
-schemas: {}
-securitySchemes:
-JWT Token:
-  type: http
-  scheme: bearer
-  description: "? Self hosted auth server | AWS Cognito ?"
+  schemas: {}
+  securitySchemes:
+    JWT Token:
+      type: http
+      scheme: bearer
+      description: "? Self hosted auth server | AWS Cognito ?"
 ...

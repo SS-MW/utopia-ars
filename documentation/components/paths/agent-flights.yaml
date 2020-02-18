@@ -12,40 +12,49 @@ get:
   - "application/xml"
   - "application/json"
   parameters:
-    - in: "query"
-      name: departure_date
-      description: "Date of departure."
-      schema:
+  - in: "query"
+    name: departure_date
+    description: "Date/time of flight departure"
+    required: true
+    schema:
         type: string
-        format: date
-    - in: "query"
-      name: arrival_date
-      description: "Date of arival."
-      schema:
+    example: "/flights?departure_date=2020-01-13-12:59:59"
+    type: string
+  - in: "query"
+    name: arrival_date
+    description: "Date/time of flight arrival"
+    required: true
+    schema:
         type: string
-        format: date
-    - in: "query"
-      name: destination
-      description: "Final journey destination"
-      schema:
+    example: "/flights?departure_arrival=2020-01-13-12:59:59"
+  - in: "query"
+    name: destination
+    description: "Flight destination"
+    required: true
+    schema:
         type: string
-    - in: "query"
-      name: origin
-      description: "starting journey location"
-      schema:
+    example: "/flights?destination=IAD"
+  - in: "query"
+    name: origin
+    description: "Flight origin"
+    required: true
+    schema:
         type: string
-    - in: "query"
-      name: capasity
-      description: "Remaining number of seats on flight"
-      schema:
-        type: integer
-        format: int32
-    - in: "query"
-      name: price
-      description: "The flat price for a flight"
-      schema:
-        type: integer
-        format: double
+    example: "/flights?origin=DCA"
+  - in: "query"
+    name: capacity
+    description: "Flight capacity"
+    required: true
+    schema:
+        type: string
+    example: "/flights?capacity=524"
+  - in: "query"
+    name: price
+    description: "Flight price"
+    required: true
+    schema:
+        type: string
+    example: "/flights?price=300"
 
   responses:
     200:
