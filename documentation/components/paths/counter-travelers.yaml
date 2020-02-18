@@ -2,8 +2,7 @@
 get:
   tags:
   - "Counter"
-  summary: "Return the list of entire travelers in the database record"
-  description: ""
+  description: "Return the list of entire travelers in the database record"
   operationId: "get-counter-travelers"
   produces:
   - "application/xml"
@@ -25,11 +24,53 @@ get:
     400:
       description: "invalid operation"
 
+get:
+  tags:
+  - "Counter"
+  description: "Return a list of travelers in the database based on email and phone number filters"
+  operationId: "get-counter-travelers__email__phone__lastName"
+  produces:
+  - "application/xml"
+  - "application/json"
+  parameters:
+    - in: "query"
+      name: email
+      description: "Traveler's email address."
+      schema:
+        type: string
+        format: email
+    - in: "query"
+      name: phone
+      description: "Traveler's phone number"
+      schema:
+        type: string
+        format: phone
+    - in: "query"
+      name: last_name
+      description: "Traveler's last name"
+      schema:
+        type: string
+  responses:
+    200:
+      description: "successful operation"
+      content:
+        application/json:
+          schema:
+            type: "array"
+            items:
+              $ref: "../definitions/traveler.yaml"
+        application/xml:
+          schema:
+            type: "array"
+            items:
+              $ref: "../definitions/traveler.yaml"
+    400:
+      description: "invalid operation"
+
 post:
   tags:
   - "Counter"
-  summary: "Create a new traveler from counter"
-  description: "Create a new traveler record"
+  description: "Create a new traveler record as a counter agent"
   operationId: "post-counter-travelers"
   consumes:
   - "application/xml"
