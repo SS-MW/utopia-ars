@@ -25,37 +25,37 @@ paths:
     $ref: "components/paths/account-register.yaml"
   /online/itineraries:
     $ref: "components/paths/online-itineraries.yaml"
-  /online/itineraries/{itineraryID}:
+  /online/itineraries/{itinerary_id}:
     $ref: "components/paths/online-itineraries_itineraryId.yaml"
-  /online/itineraries/travelers/{travelerID}:
+  /online/itineraries/travelers/{traveler_id}:
     $ref: "components/paths/online-itineraries-travelers_travelerId.yaml"
-  /online/itineraries/tickets/{ticketID}:
+  /online/itineraries/tickets/{ticket_id}:
     $ref: "components/paths/online-itineraries-tickets_ticketId.yaml"
-  /online/flights:
+  /online/flights?{params...}:
     $ref: "components/paths/online-flights.yaml"
   /agent/itineraries:
     $ref: "components/paths/agent-itineraries.yaml"
-  /agent/itineraries/{itineraryID}:
+  /agent/itineraries/{itinerary_id}:
     $ref: "components/paths/agent-itineraries_itineraryId.yaml"
-  /agent/itineraries/travelers/{travelerID}:
+  /agent/itineraries/travelers/{traveler_id}:
     $ref: "components/paths/agent-itineraries-travelers_travelerId.yaml"
-  /agent/itineraries/tickets/{ticketID}:
+  /agent/itineraries/tickets/{ticket_id}:
     $ref: "components/paths/agent-itineraries-tickets_ticketId.yaml"
-  /agent/itineraries/agency/{agencyID}:
+  /agent/itineraries/agency/{agency_id}:
     $ref: "components/paths/agent-itineraries-agency_agencyId.yaml"
   /agent/flights?{params...}:
     $ref: "components/paths/agent-flights.yaml"
   /counter/itineraries:
     $ref: "components/paths/counter-itineraries.yaml"
-  /counter/itineraries/{itineraryID}:
+  /counter/itineraries/{itinerary_id}:
     $ref: "components/paths/counter-itineraries_itineraryId.yaml"
-  /counter/itineraries/travelers/{travelerID}:
+  /counter/itineraries/travelers/{traveler_id}:
     $ref: "components/paths/counter-itineraries-travelers_travelerId.yaml"
-  /counter/itineraries/tickets/{ticketID}:
+  /counter/itineraries/tickets/{ticket_id}:
     $ref: "components/paths/counter-itineraries-tickets_ticketId.yaml"
   /counter/travelers:
     $ref: "components/paths/counter-travelers.yaml"
-  /counter/itineraries/agency/{agencyID}:
+  /counter/itineraries/agency/{agency_id}:
     $ref: "components/paths/counter-itineraries-agency_agencyId.yaml"
   /counter/flights:
-    $ref: "components/paths/counter-flights.yaml"
+    $ref: "components/paths/counter-flights.yaml?{params...}"
