@@ -8,16 +8,18 @@ get:
   consumes:
   - "application/xml"
   - "application/json"
-  produces: 
+  produces:
   - "application/xml"
   - "application/json"
   parameters:
-  - in: "body"
-    name: "body"
-    description: "list of parameters for flight; if there are none, list all flights"
-    required: false
-    schema:
-      $ref: "../definitions/flight.yaml"
+  - in: "query"
+    name: departure_date
+    required: true
+    description: "Date/time of flight departure"
+  - in: "query"
+    name: arrival_date
+    required: true
+    description: "Date/time of flight arrival"
   responses:
     200:
       description: "Successful operation"
