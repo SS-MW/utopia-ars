@@ -10,12 +10,12 @@ get:
   - "application/json"
   parameters:
   - in: "query"
-    name: itineraryId
+    name: id
     description: "Itinerary ID"
     required: true
     schema:
-      type: strintegering
-      format: int64
+      type: integer
+      format: int32
     example: "/online/itineraries?id=9"
   responses:
     200:

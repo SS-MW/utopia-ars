@@ -25,7 +25,7 @@ paths:
     $ref: "components/paths/account-register.yaml"
   /online/itineraries:
     $ref: "components/paths/online-itineraries.yaml"
-  /online/itineraries/{itineraryID}:
+  /online/itineraries?id=?:
     $ref: "components/paths/online-itineraries_itineraryId.yaml"
   /online/itineraries/travelers/{travelerID}:
     $ref: "components/paths/online-itineraries-travelers_travelerId.yaml"
