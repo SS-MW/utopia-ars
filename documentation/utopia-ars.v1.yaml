@@ -30,7 +30,7 @@ paths:
     $ref: "components/paths/online-itineraries.yaml"
   /online/itineraries?id={itinerary_id}:
     $ref: "components/paths/online-itineraries_itineraryId.yaml"
-  /online/itinerary/tickets?id={ticket_id}:
+  /online/itinerary/{itinerary_id}/tickets?id={ticket_id}:
     $ref: "components/paths/online-itinerary-tickets_ticketId.yaml"
   /online/flights/search?{params...}:
     $ref: "components/paths/online-flights-search.yaml"
