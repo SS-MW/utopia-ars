@@ -23,10 +23,10 @@ get:
       content:
         application/json:
           schema:
-            $ref: "../definitions/itinerary.yaml"
+            $ref: "../definitions/flight.yaml"
         application/xml:
           schema:
-            $ref: "../definitions/itinerary.yaml"
+            $ref: "../definitions/flight.yaml"
     400:
       description: "Invalid id supplied"
     404:
