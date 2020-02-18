@@ -1,10 +1,10 @@
 ---
-required:
-  - traveler_id
-  - user_id
-  - agency_id
-  - price_total
 type: object
+required:
+- id
+- traveler_id
+- user_id
+- price_total
 properties:
   id:
     type: integer
@@ -27,4 +27,11 @@ properties:
     nullable: true
     items:
       $ref: "../definitions/ticket.yaml"
+example:
+  id: 0
+  traveler_id: 0
+  user_id: 0
+  agency_id: 0
+  price_total: 0.0
+  tickets:[]
 ...
