@@ -14,7 +14,7 @@ required:
 description: "Create a traveler with a name, birthdate, phone number, email address, and street address."
 properties:
   first_name:
-    type:string
+    type: string
   last_name:
     type: string
   dob:
