@@ -25,11 +25,11 @@ paths:
     $ref: "components/paths/account-register.yaml"
   /online/itineraries:
     $ref: "components/paths/online-itineraries.yaml"
-  /online/itineraries?id=?:
+  /online/itineraries:
     $ref: "components/paths/online-itineraries_itineraryId.yaml"
-  /online/itineraries/travelers/{travelerID}:
+  /online/itineraries/travelers:
     $ref: "components/paths/online-itineraries-travelers_travelerId.yaml"
-  /online/itineraries/tickets/{ticketID}:
+  /online/itineraries/tickets:
     $ref: "components/paths/online-itineraries-tickets_ticketId.yaml"
   /online/flights:
     $ref: "components/paths/online-flights.yaml"
