@@ -18,8 +18,8 @@ properties:
     type: integer
     format: double
 example:
-  departure_date: 2020-01-01
-  arrival_date: 2020-01-01
+  departure_date: 2020-01-13
+  arrival_date: 2020-01-13
   destination: destination
   origin: origin
   capasity: 0
