@@ -37,12 +37,12 @@ paths:
 
   /agent/itineraries:
     $ref: "components/paths/agent-itineraries.yaml"
-  /agent/itineraries/{itinerary_id}:
+  /agent/itineraries?id={itinerary_id}:
     $ref: "components/paths/agent-itineraries_itineraryId.yaml"
-  /agent/itineraries/tickets/{ticket_id}:
-    $ref: "components/paths/agent-itineraries-tickets_ticketId.yaml"
-  /agent/itineraries/agency/{agency_id}:
-    $ref: "components/paths/agent-itineraries-agency_agencyId.yaml"
+  /agent/itinerary/{itinerary_id}/tickets?id{ticket_id}:
+    $ref: "components/paths/agent-itinerary-tickets_ticketId.yaml"
+  /agent/itinerary/{itinerary_id}/agency?id={agency_id}:
+    $ref: "components/paths/agent-itinerary-agency_agencyId.yaml"
   /agent/travelers:
     $ref: "components/paths/agent-travelers.yaml"
   /agent/travelers/search:
@@ -52,7 +52,7 @@ paths:
 
   /counter/itineraries:
     $ref: "components/paths/counter-itineraries.yaml"
-  /counter/itineraries/{itinerary_id}:
+  /counter/itineraries?id={itinerary_id}:
     $ref: "components/paths/counter-itineraries_itineraryId.yaml"
   /counter/itineraries/travelers/{traveler_id}:
     $ref: "components/paths/counter-itineraries-travelers_travelerId.yaml"
