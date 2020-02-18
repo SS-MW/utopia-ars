@@ -15,4 +15,9 @@ properties:
     - "CANCELED"
   seat_number:
     type: string
+example:
+  id: 0
+  itinerary_id: 0
+  status: "CANCELED"
+  seat_number: "1a"
 ...
