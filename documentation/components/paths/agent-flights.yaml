@@ -4,7 +4,7 @@ get:
   - "Agent"
   summary: "Return a list of flights based on parameters"
   description: "Return a list of flights based on parameters set."
-  operationId: "get-agent-flights"
+  operationId: "get-Agent-flights"
   consumes:
   - "application/xml"
   - "application/json"
@@ -55,13 +55,21 @@ get:
     schema:
         type: string
     example: "/flights?price=300"
+
   responses:
     200:
       description: "Successful operation"
-      schema:
-        type: "array"
-        items:
-          $ref: "../definitions/flight.yaml"
+      content:
+        application/json:
+          schema:
+            type: "array"
+            items:
+              $ref: "../definitions/flight.yaml"
+        application/xml:
+          schema:
+            type: "array"
+            items:
+              $ref: "../definitions/flight.yaml"
     400:
       description: "Invalid operation"
 ...
