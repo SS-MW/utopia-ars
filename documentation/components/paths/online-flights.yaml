@@ -14,11 +14,13 @@ get:
   parameters:
     - in: "query"
       name: departure_date
+      description: "Date of departure."
       schema:
         type: integer
         format: int64
     - in: "query"
       name: arrival_date
+      description: "Date of arival."
       schema:
         type: integer
         format: int64
