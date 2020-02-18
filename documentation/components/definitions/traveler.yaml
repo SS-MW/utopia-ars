@@ -36,4 +36,15 @@ properties:
     type: string
   postal_code:
     type: string
+example:
+  first_name: "first name"
+  last_name: "last name"
+  dob: "2020-01-01"
+  phone: "123-456-7890"
+  email: "example@domain.com"
+  street: "street"
+  country: "country"
+  state: "state"
+  city: " city"
+  postal_code: "00000-0000"
 ...
