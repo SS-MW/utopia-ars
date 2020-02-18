@@ -4,7 +4,7 @@ get:
   - "Counter"
   summary: "Return a list of all itineraries in the database"
   description: ""
-  operationId: "get-Counter-itineraries"
+  operationId: "get-counter-itineraries"
   produces:
   - "application/xml"
   - "application/json"
@@ -30,7 +30,7 @@ post:
   - "Counter"
   summary: "Create a new itinerary from Counter"
   description: "Create a new itinerary record"
-  operationId: "post-Counter-itineraries"
+  operationId: "post-counter-itineraries"
   consumes:
   - "application/xml"
   - "application/json"

@@ -4,7 +4,7 @@ get:
   - "Counter"
   summary: "Return itinerary information from itinerary id"
   description: "Return travelerId, agencyId, userId, and total price for an itinerary."
-  operationId: "get-Counter-itineraries_itineraryId"
+  operationId: "get-counter-itineraries_itineraryId"
   produces:
   - "application/xml"
   - "application/json"
@@ -37,7 +37,7 @@ put:
   - "Counter"
   summary: "Update the status of an itinerary to canceled"
   description: "Update the status for all tickets associated with the itinerary to canceled."
-  operationId: "put-Counter-itineraries_itineraryId"
+  operationId: "put-counter-itineraries_itineraryId"
   consumes:
   - "application/xml"
   - "application/json"

@@ -4,7 +4,7 @@ get:
   - "Online"
   summary: "Return a list of all itineraries in the database specific to the logged in user."
   description: "Requests are filtered in the back via userId contained in JWT."
-  operationId: "get-Online-itineraries"
+  operationId: "get-online-itineraries"
   produces:
   - "application/xml"
   - "application/json"
@@ -30,7 +30,7 @@ post:
   - "Online"
   summary: "Create a new itinerary from Online"
   description: "Create a new itinerary record"
-  operationId: "post-Online-itineraries"
+  operationId: "post-online-itineraries"
   consumes:
   - "application/xml"
   - "application/json"

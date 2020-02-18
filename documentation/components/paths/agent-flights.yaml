@@ -3,8 +3,8 @@ get:
   tags:
   - "Agent"
   summary: "Return a list of flights based on parameters"
-  description: "Return a list of flights based on parameters set."
-  operationId: "get-Agent-flights"
+  description: "Return a list of flights based on parameters set. If no parameters are set, return list of all flights."
+  operationId: "get-agent-flights"
   consumes:
   - "application/xml"
   - "application/json"

@@ -32,7 +32,7 @@ get:
             items:
               $ref: "../definitions/itinerary.yaml"
     400:
-      description: "Invalid id supplied"
+      description: "Invalid ID supplied"
     404:
       description: "itinerary not found"
 ...

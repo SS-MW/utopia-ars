@@ -2,8 +2,8 @@
 get:
   tags:
   - "Agent"
-  summary: "Return the list of itineraries of a specific Agency"
-  description: "Returns the list of itineraries of a specific agency"
+  summary: "Return the list of itineraries of current user's agency."
+  description: "Returns the list of itineraries of all travelers associated with the current user's agency. "
   operationId: "get-agent-itineraries-agency_agencyId"
   consumes:
   - "application/xml"
@@ -21,7 +21,7 @@ get:
       format: int64
   responses:
     200:
-      description: "successful operation"
+      description: "Successful operation"
       content:
         application/json:
           schema:
@@ -34,7 +34,7 @@ get:
             items:
               $ref: "../definitions/itinerary.yaml"
     400:
-      description: "Invalid id supplied."
+      description: "Invalid ID supplied."
     404:
       description: "Agency not found"
 ...

@@ -4,7 +4,7 @@ get:
   - "Counter"
   summary: "Return a list of flights based on parameters"
   description: "Return a list of flights based on parameters set."
-  operationId: "get-Counter-flights"
+  operationId: "get-counter-flights"
   consumes:
   - "application/xml"
   - "application/json"
