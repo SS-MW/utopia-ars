@@ -2,7 +2,7 @@
 get:
   tags:
   - "Agent"
-  description: "Return a list of travelers in the database based on email and phone number filters"
+  summary: "Return a list of travelers in the database based on email and phone number filters"
   operationId: "get-agent-travelers__email__phone__lastName"
   produces:
   - "application/xml"
