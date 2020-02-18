@@ -3,7 +3,7 @@ get:
   tags:
   - "Online"
   summary: "Return a list of all itineraries in the database specific to the logged in user."
-  description: "Requests are filtered in the back via userId contained in JWT."
+  description: "Requests are filtered by the backend via userId contained in JWT."
   operationId: "get-online-itineraries"
   produces:
   - "application/xml"
@@ -67,6 +67,8 @@ post:
               id: 0
     400:
       description: "Invalid parameter posted"
+    403:
+      description: "Access token is missing or invalid"
   requestBody:
     description: "Create a new online user account."
     required: true
@@ -77,6 +79,5 @@ post:
       application/xml:
         schema:
           $ref: "../requestBodies/itinerary.yaml"
-    403:
-      description: "Access token is missing or invalid"
+    
 ...

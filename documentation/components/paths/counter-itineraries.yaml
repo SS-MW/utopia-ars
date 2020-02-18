@@ -68,6 +68,8 @@ post:
               id: 0
     400:
       description: "Invalid parameter posted"
+    403:
+      description: "Access token is missing or invalid"
   requestBody:
     description: "Create a new online user account."
     required: true
@@ -78,6 +80,4 @@ post:
       application/xml:
         schema:
           $ref: "../requestBodies/itinerary.yaml"
-    403:
-      description: "Access token is missing or invalid"
 ...

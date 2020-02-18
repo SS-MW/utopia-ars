@@ -2,8 +2,7 @@
 get:
   tags:
   - "Online"
-  summary: "Return a ticket by ticket id"
-  description: "Returns ticket information by ticket id"
+  summary: "Return a ticket by ticket id"  
   operationId: "get-counter-itineraries-tickets_ticketId"
   produces:
   - "application/xml"

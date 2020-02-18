@@ -2,8 +2,7 @@
 get:
   tags:
   - "Online"
-  summary: "Return itinerary information from itinerary id"
-  description: "Return travelerId, agencyId, userId, and total price for an itinerary."
+  summary: "Return travelerId, agencyId, userId, and total price for an itinerary."  
   operationId: "get-online-itineraries_itineraryId"
   produces:
   - "application/xml"
