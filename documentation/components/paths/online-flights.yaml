@@ -16,14 +16,36 @@ get:
       name: departure_date
       description: "Date of departure."
       schema:
-        type: integer
-        format: int64
+        type: string
+        format: date
     - in: "query"
       name: arrival_date
       description: "Date of arival."
       schema:
+        type: string
+        format: date
+    - in: "query"
+      name: destination
+      description: "Final journey destination"
+      schema:
+        type: string
+    - in: "query"
+      name: origin
+      description: "starting journey location"
+      schema:
+        type: string
+    - in: "query"
+      name: capasity
+      description: "Remaining number of seats on flight"
+      schema:
         type: integer
-        format: int64
+        format: int32
+    - in: "query"
+      name: price
+      description: "The flat price for a flight"
+      schema:
+    type: integer
+    format: double
 
   responses:
     200:
