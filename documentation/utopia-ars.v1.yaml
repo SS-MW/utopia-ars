@@ -19,20 +19,21 @@ info:
 servers:
   - url: "http://localhost:3000"
 paths:
+
   /account:
     $ref: "components/paths/account.yaml"
   /account/register:
     $ref: "components/paths/account-register.yaml"
+
   /online/itineraries:
     $ref: "components/paths/online-itineraries.yaml"
-  /online/itineraries/{itinerary_id}:
-    $ref: "components/paths/online-itineraries_itineraryId.yaml"
-  /online/itineraries/travelers/{traveler_id}:
-    $ref: "components/paths/online-itineraries-travelers_travelerId.yaml"
+  /online/itinerary/{itinerary_id}:
+    $ref: "components/paths/online-itinerary_itineraryId.yaml"
   /online/itineraries/tickets/{ticket_id}:
     $ref: "components/paths/online-itineraries-tickets_ticketId.yaml"
   /online/flights?{params...}:
     $ref: "components/paths/online-flights.yaml"
+
   /agent/itineraries:
     $ref: "components/paths/agent-itineraries.yaml"
   /agent/itineraries/{itinerary_id}:
@@ -45,6 +46,7 @@ paths:
     $ref: "components/paths/agent-itineraries-agency_agencyId.yaml"
   /agent/flights?{params...}:
     $ref: "components/paths/agent-flights.yaml"
+
   /counter/itineraries:
     $ref: "components/paths/counter-itineraries.yaml"
   /counter/itineraries/{itinerary_id}:
