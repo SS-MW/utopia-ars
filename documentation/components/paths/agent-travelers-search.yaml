@@ -39,4 +39,6 @@ get:
               $ref: "../definitions/traveler.yaml"
     400:
       description: "invalid operation"
+    403:
+      description: "Access token is missing or invalid"
 ...

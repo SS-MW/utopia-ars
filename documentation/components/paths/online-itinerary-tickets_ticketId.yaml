@@ -28,6 +28,8 @@ get:
             $ref: "../definitions/ticket.yaml"
     400:
       description: "Invalid id supplied."
+    403:
+      description: "Access token is missing or invalid"
     404:
       description: "Ticket not found."
 ...

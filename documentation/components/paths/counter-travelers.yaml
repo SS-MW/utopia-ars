@@ -23,7 +23,8 @@ get:
               $ref: "../definitions/traveler.yaml"
     400:
       description: "invalid operation"
-
+    403:
+      description: "Access token is missing or invalid"
 post:
   tags:
   - "Counter"
@@ -75,4 +76,6 @@ post:
       application/xml:
         schema:
           $ref: "../requestBodies/traveler.yaml"
+    403:
+      description: "Access token is missing or invalid"
 ...

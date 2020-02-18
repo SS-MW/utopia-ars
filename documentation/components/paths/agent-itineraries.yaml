@@ -24,7 +24,8 @@ get:
               $ref: "../definitions/itinerary.yaml"
     400:
       description: "invalid operation"
-
+    401:
+      description: "Access token is missing or invalid"
 post:
   tags:
   - "Agent"
@@ -77,4 +78,6 @@ post:
       application/xml:
         schema:
           $ref: "../requestBodies/itinerary.yaml"
+    403:
+      description: "Access token is missing or invalid"
 ...

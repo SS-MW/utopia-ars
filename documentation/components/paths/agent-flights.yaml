@@ -65,4 +65,6 @@ get:
               $ref: "../definitions/flight.yaml"
     400:
       description: "Invalid operation"
+    403:
+      description: "Access token is missing or invalid"
 ...

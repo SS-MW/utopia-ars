@@ -33,6 +33,8 @@ get:
               $ref: "../definitions/itinerary.yaml"
     400:
       description: "Invalid ID supplied"
+    403:
+      description: "Access token is missing or invalid"
     404:
       description: "itinerary not found"
 ...
