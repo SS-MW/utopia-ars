@@ -9,14 +9,13 @@ get:
   - "application/xml"
   - "application/json"
   parameters:
-  - name: "ticket_id"
-    in: "path"
-    description: "The id of ticket"
+  - in: "query"
+    name: id
+    description: "Ticket Id"
     required: true
     schema:
-      type: integer
-      format: int64
-    example: "/online/itineraries/tickets/9"
+        type: string
+    example: "/tickets?id=9"
   responses:
     200:
       description: "successful operation"
