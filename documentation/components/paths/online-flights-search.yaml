@@ -2,8 +2,7 @@
 get:
   tags:
   - "Online"
-  summary: "Return a list of flights based on parameters"
-  description: "Return a list of flights based on parameters set."
+  summary: "Return a list of flights based on query parameters."
   operationId: "get-online-flights"
   consumes:
   - "application/xml"
