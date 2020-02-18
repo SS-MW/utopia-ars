@@ -46,13 +46,24 @@ put:
     schema:
       type: integer
       format: int64
+  requestBody:
+    description: "Information about traveler that needs to be updated"
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: "../requestBodies/traveler.yaml"
+      application/xml:
+        schema:
+          $ref: "../requestbodies/traveler.yaml"
   responses:
     200:
       description: "successful operation"
       schema:
-        $ref: "../components/definitions/traveler.yaml"
+        $ref: "../definitions/traveler.yaml"
     400:
       description: "Invalid id supplied"
     404:
       description: "Traveler not found"
+    
 ...
