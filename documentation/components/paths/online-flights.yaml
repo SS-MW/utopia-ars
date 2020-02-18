@@ -12,17 +12,19 @@ get:
   - "application/xml"
   - "application/json"
   parameters:
-  - in: "body"
-    name: "query"
-    description: "list of parameters for flight; if there are none, list al"
-    required: false
-    content:
-      application/json:
-        schema:
-          $ref: "../definitions/flight.yaml"
-      application/xml:
-        schema:
-          $ref: "../definitions/flight.yaml"
+  - in: "query"
+  name: departure_date
+  description: "Date of departure."
+  schema:
+    type: integer
+    format: int64
+  - in: "query"
+  name: arrival_date
+  description: "Date of departure."
+  schema:
+    type: integer
+    format: int64
+
   responses:
     200:
       description: "Successful operation"
