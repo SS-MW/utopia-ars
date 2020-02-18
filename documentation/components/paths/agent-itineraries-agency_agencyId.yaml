@@ -12,7 +12,7 @@ get:
   - "application/xml"
   - "application/json"
   parameters:
-  - name: "agencyId"
+  - name: "agency_id"
     in: "path"
     description: "The id of the agency"
     required: true
@@ -22,10 +22,17 @@ get:
   responses:
     200:
       description: "successful operation"
-      schema:
-        type: "array"
-        items:
-          $ref: "../definitions/itinerary.yaml"
+      content:
+        application/json:
+          schema:
+            type: "array"
+            items:
+              $ref: "../definitions/itinerary.yaml"
+        application/xml:
+          schema:
+            type: "array"
+            items:
+              $ref: "../definitions/itinerary.yaml"
     400:
       description: "Invalid id supplied."
     404:
