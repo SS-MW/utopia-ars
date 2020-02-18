@@ -2,7 +2,7 @@
 get:
   tags:
   - "Agent"
-  summary: "Return a list of all itineraries in the database"
+  summary: "Return a list of all itineraries of the user's agency in the database"
   description: ""
   operationId: "get-agent-itineraries"
   produces:
