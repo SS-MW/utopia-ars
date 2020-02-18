@@ -45,13 +45,13 @@ put:
   - "application/xml"
   - "application/json"
   parameters:
-  - name: "itineraryId"
-    in: "path"
-    description: "Itinerary Id"
-    required: true
-    schema:
-      type: integer
-      format: int64
+    - in: "path"
+      - name: "itineraryId"
+        description: "Itinerary Id"
+        required: true
+        schema:
+          type: integer
+          format: int64
     example: "/online/itineraries/9"
   responses:
     200:
