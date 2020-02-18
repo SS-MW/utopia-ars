@@ -21,7 +21,7 @@ post:
                 description: Placeholder for JWT token.
             example:
                 result: "success"
-                token": "TOKEN HERE"
+                token: "TOKEN HERE"
     401:
       description: "Authorization information is missing or invalid."
 
@@ -38,10 +38,10 @@ post:
 
 parameters: []
 components:
-schemas: {}
-securitySchemes:
-  JWT Token:
-    type: http
-    scheme: bearer
-    description: "? Self hosted auth server | AWS Cognito ?"
+  schemas: {}
+  securitySchemes:
+    JWT Token:
+      type: http
+      scheme: bearer
+      description: "? Self hosted auth server | AWS Cognito ?"
 ...
