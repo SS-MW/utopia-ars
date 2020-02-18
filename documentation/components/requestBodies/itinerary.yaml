@@ -16,15 +16,12 @@ properties:
   agency_id:
     type: integer
     format: int64
-  travelers:
+  traveler_id:
+    type: integer
+    format: int64
+  tickets:
     type: array
-    items:
-      type: object
-      required:
-      - traveler_id
-      description: The traveler ID and their itinerary
-      properties:
-        traveler_id:
-          type: integer
-          format: int64
+    nullable: true
+    items: 
+      $ref: "../definitions/ticket.yaml"
 ...
