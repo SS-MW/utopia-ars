@@ -46,6 +46,16 @@ put:
     schema:
       type: integer
       format: int64
+  requestBody:
+    description: "Information about traveler that needs to be updated"
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: "../requestBodies/itinerary.yaml"
+      application/xml:
+        schema:
+          $ref: "../requestbodies/itinerary.yaml"
   responses:
     200:
       description: "successful operation"

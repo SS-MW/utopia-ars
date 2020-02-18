@@ -9,14 +9,14 @@ get:
   - "application/xml"
   - "application/json"
   parameters:
-  - name: "itineraryId"
-    in: "path"
-    description: "Itinerary Id"
+  - in: "query"
+    name: id
+    description: "Itinerary ID"
     required: true
     schema:
       type: integer
-      format: int64
-    example: "/online/itineraries/9"
+      format: int32
+    example: "/online/itineraries?id=9"
   responses:
     200:
       description: "successful operation"

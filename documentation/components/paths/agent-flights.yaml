@@ -19,7 +19,6 @@ get:
     schema:
         type: string
     example: "/flights?departure_date=2020-01-13-12:59:59"
-    type: string
   - in: "query"
     name: arrival_date
     description: "Date/time of flight arrival"
