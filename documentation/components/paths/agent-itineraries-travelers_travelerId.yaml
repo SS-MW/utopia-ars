@@ -2,29 +2,37 @@
 get:
   tags:
   - "Agent"
-  summary: "Return a list of itineraries  that a traveler has booked from this specific agency."
+  summary: "Return a list of itineraries  that a traveler has booked."
   description: "Return travelerId, agencyId, userId, and total price for every itinerary that the traveler has booked."
-  operationId: "get-agent-itineraries-travelers_travelerId"
+  operationId: "get-counter-itineraries-travelers_travelerId"
   produces:
   - "application/xml"
   - "application/json"
   parameters:
-  - name: "travelerId"
+  - name: "id"
     in: "path"
-    description: "The id of traveler"
+    description: "Traveler ID"
     required: true
     schema:
       type: integer
       format: int64
+    example: "/Agent/itineraries/travellers?id=9"
   responses:
     200:
       description: "successful operation"
-      schema:
-        type: "array"
-        items:
-          $ref: "../definitions/itinerary.yaml"
+      content:
+        application/json:
+          schema:
+            type: "array"
+            items:
+              $ref: "../definitions/itinerary.yaml"
+        application/xml:
+          schema:
+            type: "array"
+            items:
+              $ref: "../definitions/itinerary.yaml"
     400:
       description: "Invalid id supplied"
     404:
-      description: "Itinerary not found"
+      description: "itinerary not found"
 ...
