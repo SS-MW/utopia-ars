@@ -18,6 +18,7 @@ properties:
     format: int64
   agency_id:
     type: integer
+    nullable: true
     format: int64
   price_total:
     type: integer
