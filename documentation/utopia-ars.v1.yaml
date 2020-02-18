@@ -59,3 +59,14 @@ paths:
     $ref: "components/paths/counter-travelers.yaml"
   /counter/flights:
     $ref: "components/paths/counter-flights.yaml?{params...}"
+
+components:
+  schemas: {}
+  securitySchemes:
+    JWT:
+      type: http
+      scheme: bearer
+      description: "? Self hosted auth server | AWS Cognito ?"
+
+security:
+  - JWT: [] # From name specified under securitySchemes
