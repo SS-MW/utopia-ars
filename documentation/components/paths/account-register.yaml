@@ -5,17 +5,18 @@ post:
   operationId: post-account-register
   summary: Create an account
   description: |-
-    This endpoint creates a user account. Accessible to:
+
+    Register a new user account. Accessible to:
 
     * Traveller
     * Travel agent
     * Airline counter agent
 
   responses:
-    "201":
+    201:
       description: OK
   requestBody:
-    description: "Create a new online user account."
+    description: "Create a new Utopia ARS user account."
     required: true
     content:
       application/json:
