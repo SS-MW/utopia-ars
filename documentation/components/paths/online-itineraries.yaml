@@ -4,26 +4,33 @@ get:
   - "Online"
   summary: "Return a list of all itineraries in the database"
   description: ""
-  operationId: "get-online-itineraries"
+  operationId: "get-Online-itineraries"
   produces:
   - "application/xml"
   - "application/json"
   responses:
     200:
       description: "successful operation"
-      schema:
-        type: "array"
-        items:
-          $ref: "../definitions/itinerary.yaml"
+      content:
+        application/json:
+          schema:
+            type: "array"
+            items:
+              $ref: "../definitions/itinerary.yaml"
+        application/xml:
+          schema:
+            type: "array"
+            items:
+              $ref: "../definitions/itinerary.yaml"
     400:
       description: "invalid operation"
 
 post:
   tags:
   - "Online"
-  summary: "Create a new itinerary from online"
+  summary: "Create a new itinerary from Online"
   description: "Create a new itinerary record"
-  operationId: "post-online-itineraries"
+  operationId: "post-Online-itineraries"
   consumes:
   - "application/xml"
   - "application/json"

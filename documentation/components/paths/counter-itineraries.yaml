@@ -4,26 +4,33 @@ get:
   - "Counter"
   summary: "Return a list of all itineraries in the database"
   description: ""
-  operationId: "get-counter-itineraries"
+  operationId: "get-Counter-itineraries"
   produces:
   - "application/xml"
   - "application/json"
   responses:
     200:
       description: "successful operation"
-      schema:
-        type: "array"
-        items:
-          $ref: "../definitions/itinerary.yaml"
+      content:
+        application/json:
+          schema:
+            type: "array"
+            items:
+              $ref: "../definitions/itinerary.yaml"
+        application/xml:
+          schema:
+            type: "array"
+            items:
+              $ref: "../definitions/itinerary.yaml"
     400:
       description: "invalid operation"
 
 post:
   tags:
   - "Counter"
-  summary: "Create a new itinerary from counter"
+  summary: "Create a new itinerary from Counter"
   description: "Create a new itinerary record"
-  operationId: "post-counter-itineraries"
+  operationId: "post-Counter-itineraries"
   consumes:
   - "application/xml"
   - "application/json"
@@ -31,7 +38,7 @@ post:
   - "application/xml"
   - "application/json"
   responses:
-    201:
+    "201":
       description: "Itinerary created"
       content:
         application/json:
@@ -61,7 +68,7 @@ post:
     400:
       description: "Invalid parameter posted"
   requestBody:
-    description: "Create a new itinerary."
+    description: "Create a new online user account."
     required: true
     content:
       application/json:
