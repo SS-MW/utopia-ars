@@ -9,7 +9,7 @@ get:
   - "application/xml"
   - "application/json"
   parameters:
-  - name: "id"
+  - name: "traveler_id"
     in: "path"
     description: "Traveler ID"
     required: true

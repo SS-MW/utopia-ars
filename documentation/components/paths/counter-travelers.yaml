@@ -77,5 +77,4 @@ post:
       application/xml:
         schema:
           $ref: "../requestBodies/traveler.yaml"
-
 ...
