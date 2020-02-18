@@ -10,7 +10,7 @@ get:
   - "application/json"
   parameters:
   - name: "id"
-    in: "query"
+    in: "path"
     description: "Traveler ID"
     required: true
     schema:
@@ -20,10 +20,17 @@ get:
   responses:
     200:
       description: "successful operation"
-      schema:
-        type: "array"
-        items:
-          $ref: "../definitions/itinerary.yaml"
+      content:
+        application/json:
+          schema:
+            type: "array"
+            items:
+              $ref: "../definitions/itinerary.yaml"
+        application/xml:
+          schema:
+            type: "array"
+            items:
+              $ref: "../definitions/itinerary.yaml"
     400:
       description: "Invalid id supplied"
     404:
