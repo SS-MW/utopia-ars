@@ -35,7 +35,7 @@ get:
       schema:
         type: string
     - in: "query"
-      name: capasity
+      name: capacity
       description: "Remaining number of seats on flight"
       schema:
         type: integer
