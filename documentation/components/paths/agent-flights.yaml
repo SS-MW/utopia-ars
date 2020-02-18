@@ -14,10 +14,11 @@ get:
   parameters:
   - in: "query"
     name: departure_date
+    description: "Date/time of flight departure"
     required: true
     schema:
         type: string
-    description: "Date/time of flight departure"
+    example: "/agent/flights?departure_date=2020-01-13"
     type: string
   - in: "query"
     name: arrival_date
@@ -41,7 +42,7 @@ get:
     name: capacity
     required: true
     schema:
-        type: string    
+        type: string
     description: "Flight origin"
   responses:
     200:
