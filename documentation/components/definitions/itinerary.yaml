@@ -6,6 +6,9 @@ required:
   - price_total
 type: object
 properties:
+  id:
+    type: integer
+    format: int64
   traveler_id:
     type: integer
     format: int64
