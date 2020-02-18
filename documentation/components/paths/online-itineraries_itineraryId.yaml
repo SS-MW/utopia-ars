@@ -9,7 +9,7 @@ get:
   - "application/xml"
   - "application/json"
   parameters:
-  - name: "itineraryId"
+  - name: "itinerary_id"
     in: "path"
     description: "Itinerary Id"
     required: true
@@ -45,7 +45,7 @@ put:
   - "application/xml"
   - "application/json"
   parameters:
-  - name: "itineraryId"
+  - name: "itinerary_id"
     in: "path"
     description: "Itinerary Id"
     required: true

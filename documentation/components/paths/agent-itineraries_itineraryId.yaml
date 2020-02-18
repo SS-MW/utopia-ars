@@ -4,34 +4,40 @@ get:
   - "Agent"
   summary: "Return itinerary information from itinerary id"
   description: "Return travelerId, agencyId, userId, and total price for an itinerary."
-  operationId: "get-agent-itineraries_itineraryId"
+  operationId: "get-Agent-itineraries_itineraryId"
   produces:
   - "application/xml"
   - "application/json"
   parameters:
-  - name: "itineraryId"
+  - name: "itinerary_id"
     in: "path"
     description: "Itinerary Id"
     required: true
     schema:
       type: integer
       format: int64
+
   responses:
     200:
-      description: "successful operation"
-      schema:
-        $ref: "../definitions/itinerary.yaml"
+      description: "Successful operation"
+      content:
+        application/json:
+          schema:
+            $ref: "../definitions/itinerary.yaml"
+        application/xml:
+          schema:
+            $ref: "../definitions/itinerary.yaml"
     400:
       description: "Invalid id supplied"
     404:
       description: "itinerary not found"
-    
+
 put:
   tags:
   - "Agent"
   summary: "Update the status of an itinerary to canceled"
   description: "Update the status for all tickets associated with the itinerary to canceled."
-  operationId: "put-agent-itineraries_itineraryId"
+  operationId: "put-Agent-itineraries_itineraryId"
   consumes:
   - "application/xml"
   - "application/json"
@@ -39,7 +45,7 @@ put:
   - "application/xml"
   - "application/json"
   parameters:
-  - name: "itineraryId"
+  - name: "itinerary_id"
     in: "path"
     description: "Itinerary Id"
     required: true
@@ -47,10 +53,8 @@ put:
       type: integer
       format: int64
   responses:
-    200:
-      description: "successful operation"
-      schema:
-        $ref: "../definitions/itinerary.yaml"
+    204:
+      description: "successful operation, no content"
     400:
       description: "Invalid id supplied"
     404:
