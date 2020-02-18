@@ -52,15 +52,15 @@ put:
     content:
       application/json:
         schema:
-          $ref: "../components/requestBodies/itinerary.yaml"
+          $ref: "../requestBodies/itinerary.yaml"
       application/xml:
         schema:
-          $ref: "../components/requestbodies/itinerary.yaml"
+          $ref: "../requestBodies/traveler.yaml"
   responses:
     200:
       description: "successful operation"
       schema:
-        $ref: "../components/definitions/itinerary.yaml"
+        $ref: "../definitions/itinerary.yaml"
     400:
       description: "Invalid id supplied"
     404:
