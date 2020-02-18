@@ -15,11 +15,34 @@ get:
   - in: "query"
     name: departure_date
     required: true
+    schema:
+        type: string
     description: "Date/time of flight departure"
+    type: string
   - in: "query"
     name: arrival_date
     required: true
+    schema:
+        type: string
     description: "Date/time of flight arrival"
+  - in: "query"
+    name: destination
+    required: true
+    schema:
+        type: string
+    description: "Flight destination"
+  - in: "query"
+    name: origin
+    required: true
+    schema:
+        type: string
+    description: "Flight origin"
+  - in: "query"
+    name: capacity
+    required: true
+    schema:
+        type: string    
+    description: "Flight origin"
   responses:
     200:
       description: "Successful operation"
