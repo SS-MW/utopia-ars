@@ -16,6 +16,7 @@ get:
     schema:
       type: integer
       format: int64
+    example: "/online/itineraries/9"
   responses:
     200:
       description: "successful operation"
@@ -25,7 +26,7 @@ get:
       description: "Invalid id supplied"
     404:
       description: "itinerary not found"
-    
+
 put:
   tags:
   - "Online"
@@ -46,6 +47,7 @@ put:
     schema:
       type: integer
       format: int64
+    example: "/online/itineraries/9"
   responses:
     200:
       description: "successful operation"

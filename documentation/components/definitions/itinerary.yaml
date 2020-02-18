@@ -18,9 +18,14 @@ properties:
     format: int64
   agency_id:
     type: integer
+    nullable: true
     format: int64
   price_total:
     type: integer
     format: double
-
+  tickets:
+    type: array
+    nullable: true
+    items:
+      $ref: "../definitions/ticket.yaml"
 ...

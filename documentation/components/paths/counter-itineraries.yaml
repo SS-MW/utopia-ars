@@ -61,7 +61,7 @@ post:
     400:
       description: "Invalid parameter posted"
   requestBody:
-    description: "Create a new online user account."
+    description: "Create a new itinerary."
     required: true
     content:
       application/json:
