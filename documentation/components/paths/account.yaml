@@ -2,7 +2,7 @@
 post:
   tags:
     - Account
-  summary: Login to an existing user account
+  summary: Login to an existing user account.
   operationId: post-account-login
   responses:
     "201":
