@@ -1,5 +1,5 @@
 ---
-type: object 
+type: object
 required:
 - first_name
 - last_name
@@ -15,40 +15,22 @@ description: "Create a traveler with a name, birthdate, phone number, email addr
 properties:
   first_name:
     type:string
-    minLength: 1
-    maxLength: 45
   last_name:
     type: string
-    minLength: 1
-    maxLength: 45
   dob:
     type: string
   phone:
     type: string
-    minLength: 1
-    maxLength: 45
   email:
     type: string
-    minLength: 1
-    maxLength: 45
   street:
     type: string
-    minLength: 1
-    maxLength: 45
   city:
     type: string
-    minLength: 1
-    maxLength: 45
   state:
     type: string
-    minLength: 1
-    maxLength: 45
   postal_code:
     type: string
-    minLength: 1
-    maxLength: 45
   country:
     type: string
-    minLength: 1
-    maxLength: 45
   ...
