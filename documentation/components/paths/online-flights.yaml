@@ -21,10 +21,17 @@ get:
   responses:
     200:
       description: "Successful operation"
-      schema:
-        type: "array"
-        items:
-          $ref: "../definitions/flight.yaml"
+      content:
+        application/json:
+          schema:
+            type: "array"
+            items:
+              $ref: "../definitions/flight.yaml"
+        application/xml:
+          schema:
+            type: "array"
+            items:
+              $ref: "../definitions/flight.yaml"
     400:
       description: "Invalid operation"
 ...
