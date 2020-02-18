@@ -2,8 +2,8 @@
 get:
   tags:
   - "Online"
-  summary: Return a list of all itineraries in the database specific to the logged in user.
-  description: Requests are filtered in the back via userId contained in JWT.
+  summary: "Return a list of all itineraries in the database specific to the logged in user.""
+  description: "Requests are filtered in the back via userId contained in JWT.""
   operationId: "get-Online-itineraries"
   produces:
   - "application/xml"
