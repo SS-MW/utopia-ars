@@ -12,18 +12,18 @@ get:
   - "application/xml"
   - "application/json"
   parameters:
-  - in: "query"
-  name: departure_date
-  description: "Date of departure."
-  schema:
-    type: integer
-    format: int64
-  - in: "query"
-  name: arrival_date
-  description: "Date of departure."
-  schema:
-    type: integer
-    format: int64
+    - in: "query"
+    name: departure_date
+    description: "Date of departure."
+    schema:
+      type: integer
+      format: int64
+    - in: "query"
+    name: arrival_date
+    description: "Date of departure."
+    schema:
+      type: integer
+      format: int64
 
   responses:
     200:
