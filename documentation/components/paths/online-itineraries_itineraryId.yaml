@@ -4,7 +4,10 @@ get:
   - "Online"
   summary: "Return information about a itinerary"
   description: "Return travelerId, agencyId, userId, and total price for an itinerary."
-  operationId: "get-counter-itineraries_itineraryId"
+  operationId: "get-online-itineraries_itineraryId"
+  consumes:
+  - "application/xml"
+  - "application/json"
   produces:
   - "application/xml"
   - "application/json"
@@ -16,7 +19,6 @@ get:
       schema:
         type: integer
         format: int32
-
   responses:
     200:
       description: "successful operation"
@@ -41,9 +43,6 @@ put:
   consumes:
   - "application/xml"
   - "application/json"
-  produces:
-  - "application/xml"
-  - "application/json"
   parameters:
     - in: "path"
       - name: "itineraryId"
@@ -52,7 +51,6 @@ put:
       schema:
         type: integer
         format: int64
-
   responses:
     204:
       description: "successful operation"
