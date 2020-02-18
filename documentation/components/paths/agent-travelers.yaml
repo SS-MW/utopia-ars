@@ -2,7 +2,7 @@
 post:
   tags:
   - "Agent"
-  description: "Create a new traveler record as a traveler agent"
+  summary: "Create a new traveler record as a travel agent"
   operationId: "post-Agent-travelers"
   consumes:
   - "application/xml"
