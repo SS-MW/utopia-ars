@@ -19,20 +19,32 @@ properties:
     maxLength: 45
   last_name:
     type: string
+    minLength: 1
+    maxLength: 45
   dob:
-    type: string
+    type: date-time
   phone:
-    type: string
+    type: phone
   email:
-    type: string
+    type: email
   street:
     type: string
+    minLength: 1
+    maxLength: 45
   city:
     type: string
+    minLength: 1
+    maxLength: 45
   state:
     type: string
+    minLength: 1
+    maxLength: 45
   postal_code:
     type: string
+    minLength: 1
+    maxLength: 45
   country:
     type: string
+    minLength: 1
+    maxLength: 45
 ...
