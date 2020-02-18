@@ -4,27 +4,63 @@ get:
   - "Agent"
   summary: "Return a list of flights based on parameters"
   description: "Return a list of flights based on parameters set."
-  operationId: "get-agent-flights"
+  operationId: "get-Agent-flights"
   consumes:
   - "application/xml"
   - "application/json"
-  produces: 
+  produces:
   - "application/xml"
   - "application/json"
   parameters:
-  - in: "body"
-    name: "body"
-    description: "list of parameters for flight; if there are none, list all flights"
-    required: false
-    schema:
-      $ref: "../definitions/flight.yaml"
+    - in: "query"
+      name: departure_date
+      description: "Date of departure."
+      schema:
+        type: string
+        format: date
+    - in: "query"
+      name: arrival_date
+      description: "Date of arival."
+      schema:
+        type: string
+        format: date
+    - in: "query"
+      name: destination
+      description: "Final journey destination"
+      schema:
+        type: string
+    - in: "query"
+      name: origin
+      description: "starting journey location"
+      schema:
+        type: string
+    - in: "query"
+      name: capasity
+      description: "Remaining number of seats on flight"
+      schema:
+        type: integer
+        format: int32
+    - in: "query"
+      name: price
+      description: "The flat price for a flight"
+      schema:
+        type: integer
+        format: double
+
   responses:
     200:
       description: "Successful operation"
-      schema:
-        type: "array"
-        items:
-          $ref: "../definitions/flight.yaml"
+      content:
+        application/json:
+          schema:
+            type: "array"
+            items:
+              $ref: "../definitions/flight.yaml"
+        application/xml:
+          schema:
+            type: "array"
+            items:
+              $ref: "../definitions/flight.yaml"
     400:
       description: "Invalid operation"
 ...
