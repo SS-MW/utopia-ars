@@ -35,7 +35,7 @@ post:
       content:
         application/json:
           schema:
-            type: object 
+            type: object
             required:
             - id
             description: "The Id of the created itinerary"
@@ -47,7 +47,7 @@ post:
               id: 0
         application/xml:
           schema:
-            type: object 
+            type: object
             required:
             - id
             description: "The Id of the created itinerary"
@@ -69,5 +69,5 @@ post:
       application/xml:
         schema:
           $ref: "../requestBodies/traveler.yaml"
-          
+
 ...
