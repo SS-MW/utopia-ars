@@ -32,8 +32,8 @@ paths:
     $ref: "components/paths/online-itineraries_itineraryId.yaml"
   /online/itinerary/tickets?id={ticket_id}:
     $ref: "components/paths/online-itinerary-tickets_ticketId.yaml"
-  /online/flights?{params...}:
-    $ref: "components/paths/online-flights.yaml"
+  /online/flights/search:
+    $ref: "components/paths/online-flights-search.yaml"
 
   /agent/itineraries:
     $ref: "components/paths/agent-itineraries.yaml"
@@ -45,8 +45,8 @@ paths:
     $ref: "components/paths/agent-itineraries-agency_agencyId.yaml"
   /agent/travelers/search:
     $ref: "components/paths/agent-travelers-search.yaml"
-  /agent/flights?{params...}:
-    $ref: "components/paths/agent-flights.yaml"
+  /agent/flights/search:
+    $ref: "components/paths/agent-flights-search.yaml"
 
   /counter/itineraries:
     $ref: "components/paths/counter-itineraries.yaml"
@@ -60,8 +60,8 @@ paths:
     $ref: "components/paths/counter-travelers.yaml"
   /counter/travelers/search:
     $ref: "components/paths/counter-travelers-search.yaml"
-  /counter/flights:
-    $ref: "components/paths/counter-flights.yaml?{params...}"
+  /counter/flights/search:
+    $ref: "components/paths/counter-flights-search.yaml"
 
 components:
   schemas: {}
