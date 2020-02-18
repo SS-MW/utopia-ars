@@ -9,13 +9,13 @@ get:
   - "application/xml"
   - "application/json"
   parameters:
-  - in: "query"
-    name: id
-    description: "Itinerary ID"
-    required: true
-    schema:
-      type: integer
-      format: int32
+    - in: "query"
+      name: id
+      description: "Itinerary ID"
+      required: true
+      schema:
+        type: integer
+        format: int32
     example: "/online/itineraries?id=9"
   responses:
     200:
@@ -54,10 +54,8 @@ put:
           format: int64
     example: "/online/itineraries/9"
   responses:
-    200:
+    204:
       description: "successful operation"
-      schema:
-        $ref: "../definitions/itinerary.yaml"
     400:
       description: "Invalid id supplied"
     404:
