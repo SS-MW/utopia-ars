@@ -4,7 +4,7 @@ get:
   - "Agent"
   summary: "Return a ticket by ticket id"
   description: "Returns ticket information by ticket id"
-  operationId: "get-agent-itineraries-tickets_ticketId"
+  operationId: "get-counter-itineraries-tickets_ticketId"
   produces:
   - "application/xml"
   - "application/json"
@@ -16,13 +16,17 @@ get:
     schema:
       type: integer
       format: int64
+    example: "/Agent/itineraries/tickets/9"
   responses:
     200:
       description: "successful operation"
-      schema:
-        type: "array"
-        items:
-          $ref: "../definitions/ticket.yaml"
+      content:
+        application/json:
+          schema:
+            $ref: "../definitions/ticket.yaml"
+        application/xml:
+          schema:
+            $ref: "../definitions/ticket.yaml"
     400:
       description: "Invalid id supplied."
     404:
