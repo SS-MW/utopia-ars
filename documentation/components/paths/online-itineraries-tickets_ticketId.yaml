@@ -16,6 +16,7 @@ get:
     schema:
       type: integer
       format: int64
+    example: "/online/itineraries/ticket/9"
   responses:
     200:
       description: "successful operation"
