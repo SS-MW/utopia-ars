@@ -22,25 +22,9 @@ properties:
       type: object
       required:
       - traveler_id
-      - itinerary
       description: The traveler ID and their itinerary
       properties:
         traveler_id:
           type: integer
           format: int64
-        itinerary:
-          type: array
-          items:
-            type: object
-            required:
-            - flight_number
-            - seat_number
-            description: A ticket object that includes a flight number and seat number on that flight associated with an itinerary
-            properties:
-              flight_number:
-                type: integer
-                format: int64
-              seat_number:
-                type: string
-                pattern: "^\\d*[a-zA-Z]$"
 ...
