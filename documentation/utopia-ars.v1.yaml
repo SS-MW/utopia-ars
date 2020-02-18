@@ -13,7 +13,7 @@ info:
   description: |-
     This API is designed to manage ticket reservations within Utopia Airlines. It can be used by:
 
-    * Travellers
+    * Travelers
     * Travel agents
     * Airline counter agents.
 servers:
