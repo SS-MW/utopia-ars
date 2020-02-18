@@ -4,14 +4,17 @@ get:
   - "Counter"
   summary: "Return the list of itineraries of a specific Agency"
   description: "Returns the list of itineraries of a specific agency"
-  operationId: "get-counter-itineraries-agency_agencyId"
+  operationId: "get-Counter-itineraries-agency_agencyId"
+  consumes:
+  - "application/xml"
+  - "application/json"
   produces:
   - "application/xml"
   - "application/json"
   parameters:
-  - name: "agencyId"
+  - name: "agency_id"
     in: "path"
-    description: "agencyId"
+    description: "The id of the agency"
     required: true
     schema:
       type: integer
@@ -19,12 +22,19 @@ get:
   responses:
     200:
       description: "successful operation"
-      schema:
-        type: "array"
-        items:
-          $ref: "../definitions/itinerary.yaml"
+      content:
+        application/json:
+          schema:
+            type: "array"
+            items:
+              $ref: "../definitions/itinerary.yaml"
+        application/xml:
+          schema:
+            type: "array"
+            items:
+              $ref: "../definitions/itinerary.yaml"
     400:
       description: "Invalid id supplied."
     404:
-      description: "Agency not found."
+      description: "Agency not found"
 ...
