@@ -28,9 +28,9 @@ paths:
 
   /online/itineraries:
     $ref: "components/paths/online-itineraries.yaml"
-  /online/itineraries/{itinerary_id}:
+  /online/itineraries?id={itinerary_id}:
     $ref: "components/paths/online-itineraries_itineraryId.yaml"
-  /online/itinerary/tickets?{ticket_id}:
+  /online/itinerary/tickets?id={ticket_id}:
     $ref: "components/paths/online-itinerary-tickets_ticketId.yaml"
   /online/flights?{params...}:
     $ref: "components/paths/online-flights.yaml"
