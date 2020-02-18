@@ -44,8 +44,8 @@ get:
       name: price
       description: "The flat price for a flight"
       schema:
-    type: integer
-    format: double
+        type: integer
+        format: double
 
   responses:
     200:
