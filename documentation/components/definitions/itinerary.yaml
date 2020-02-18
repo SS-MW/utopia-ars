@@ -23,5 +23,9 @@ properties:
   price_total:
     type: integer
     format: double
-
+  tickets:
+    type: array
+    nullable: true
+    items:
+      $ref: "../definitions/ticket.yaml"
 ...
