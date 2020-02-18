@@ -22,11 +22,14 @@ properties:
     minLength: 1
     maxLength: 45
   dob:
-    type: date-time
+    type: string
+    format: date-time
   phone:
-    type: phone
+    type: string
+    format: phone
   email:
-    type: email
+    type: string
+    format: email
   street:
     type: string
     minLength: 1
