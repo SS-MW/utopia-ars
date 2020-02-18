@@ -2,7 +2,7 @@
 post:
   tags:
   - "Agent"
-  description: "Create a new traveler record as a traveler agent"
+  summary: "Create a new traveler record as a travel agent"
   operationId: "post-Agent-travelers"
   consumes:
   - "application/xml"
@@ -40,6 +40,8 @@ post:
               id: 0
     400:
       description: "Invalid parameter posted"
+    403:
+      description: "Access token is missing or invalid"
   requestBody:
     description: "create new traveler from Agent"
     required: true
@@ -50,6 +52,4 @@ post:
       application/xml:
         schema:
           $ref: "../requestBodies/traveler.yaml"
-    403:
-      description: "Access token is missing or invalid"
 ...

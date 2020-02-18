@@ -2,7 +2,7 @@
 get:
   tags:
   - "Counter"
-  description: "Return the list of entire travelers in the database record"
+  summary: "Return the list of entire travelers in the database record"
   operationId: "get-counter-travelers"
   produces:
   - "application/xml"
@@ -28,7 +28,7 @@ get:
 post:
   tags:
   - "Counter"
-  description: "Create a new traveler record as a counter agent"
+  summary: "Create a new traveler record as a counter agent"
   operationId: "post-counter-travelers"
   consumes:
   - "application/xml"
