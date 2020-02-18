@@ -17,11 +17,4 @@ properties:
   price:
     type: integer
     format: double
-example:
-  departure_date: 2020-01-01
-  arrival_date: 2020-01-01
-  destination: destination
-  origin: origin
-  capasity: 0
-  price: 0.00
 ...
