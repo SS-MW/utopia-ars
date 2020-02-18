@@ -23,14 +23,11 @@ get:
       content:
         application/json:
           schema:
-            type: "array"
-            items:
-              $ref: "../definitions/flight.yaml"
+            $ref: "../definitions/itinerary.yaml"
         application/xml:
           schema:
-            type: "array"
-            items:
-              $ref: "../definitions/flight.yaml"    400:
+            $ref: "../definitions/itinerary.yaml"
+    400:
       description: "Invalid id supplied"
     404:
       description: "itinerary not found"
