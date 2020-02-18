@@ -18,7 +18,7 @@ get:
     required: true
     schema:
         type: string
-    example: "departure_date=2020-01-13-12:59:59"
+    example: "/flights?departure_date=2020-01-13-12:59:59"
     type: string
   - in: "query"
     name: arrival_date
@@ -26,35 +26,35 @@ get:
     required: true
     schema:
         type: string
-    example: "departure_arrival=2020-01-13-12:59:59"
+    example: "/flights?departure_arrival=2020-01-13-12:59:59"
   - in: "query"
     name: destination
     description: "Flight destination"
     required: true
     schema:
         type: string
-    example: "destination=IAD"
+    example: "/flights?destination=IAD"
   - in: "query"
     name: origin
     description: "Flight origin"
     required: true
     schema:
         type: string
-    exmaple: "origin=DCA"
+    example: "/flights?origin=DCA"
   - in: "query"
     name: capacity
     description: "Flight capacity"
     required: true
     schema:
         type: string
-    example: "capacity=524"
+    example: "/flights?capacity=524"
   - in: "query"
     name: price
     description: "Flight price"
     required: true
     schema:
         type: string
-    example: "price=300"
+    example: "/flights?price=300"
   responses:
     200:
       description: "Successful operation"
