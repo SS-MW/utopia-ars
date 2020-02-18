@@ -8,7 +8,7 @@ get:
   consumes:
   - "application/xml"
   - "application/json"
-  produces: 
+  produces:
   - "application/xml"
   - "application/json"
   parameters:
