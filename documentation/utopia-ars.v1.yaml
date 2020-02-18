@@ -58,6 +58,8 @@ paths:
     $ref: "components/paths/counter-itineraries-tickets_ticketId.yaml"
   /counter/travelers:
     $ref: "components/paths/counter-travelers.yaml"
+  /counter/travelers/search:
+    $ref: "components/paths/counter-travelers-search.yaml"
   /counter/flights:
     $ref: "components/paths/counter-flights.yaml?{params...}"
 
