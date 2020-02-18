@@ -2,23 +2,20 @@
 get:
   tags:
   - "Online"
-  summary: "Return information about a itinerary"
+  summary: "Return itinerary information from itinerary id"
   description: "Return travelerId, agencyId, userId, and total price for an itinerary."
-  operationId: "get-online-itineraries_itineraryId"
-  consumes:
-  - "application/xml"
-  - "application/json"
+  operationId: "get-Online-itineraries_itineraryId"
   produces:
   - "application/xml"
   - "application/json"
   parameters:
-    - in: "path"
-      name: id
-      description: "Itinerary ID"
-      required: true
-      schema:
-        type: integer
-        format: int32
+  - name: "itineraryId"
+    in: "path"
+    description: "Itinerary Id"
+    required: true
+    schema:
+      type: integer
+      format: int64
   responses:
     200:
       description: "successful operation"
@@ -33,27 +30,32 @@ get:
       description: "Invalid id supplied"
     404:
       description: "itinerary not found"
-
+    
 put:
   tags:
   - "Online"
   summary: "Update the status of an itinerary to canceled"
   description: "Update the status for all tickets associated with the itinerary to canceled."
-  operationId: "put-counter-itineraries_itineraryId"
+  operationId: "put-Online-itineraries_itineraryId"
   consumes:
   - "application/xml"
   - "application/json"
+  produces:
+  - "application/xml"
+  - "application/json"
   parameters:
-    - in: "path"
-      - name: "itineraryId"
-      description: "Itinerary Id"
-      required: true
-      schema:
-        type: integer
-        format: int64
+  - name: "itineraryId"
+    in: "path"
+    description: "Itinerary Id"
+    required: true
+    schema:
+      type: integer
+      format: int64
   responses:
-    204:
+    200:
       description: "successful operation"
+      schema:
+        $ref: "../definitions/itinerary.yaml"
     400:
       description: "Invalid id supplied"
     404:
