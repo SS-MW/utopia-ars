@@ -33,5 +33,7 @@ example:
   user_id: 0
   agency_id: 0
   price_total: 0.0
-  tickets: []
+  tickets:
+    items:
+      type: object
 ...
