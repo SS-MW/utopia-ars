@@ -1,9 +1,6 @@
 ---
 type: object
 properties:
-  id:
-    type: integer
-    format: int64
   itinerary_id:
     type: integer
     format: int64

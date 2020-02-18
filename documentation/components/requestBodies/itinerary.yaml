@@ -23,8 +23,5 @@ properties:
     type: array
     nullable: true
     items: 
-      ticket_id: 
-        type: integer
-        nullable: true
-        format: int64
+      $ref: "../definitions/ticket.yaml"
 ...
