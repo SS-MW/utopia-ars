@@ -16,10 +16,12 @@ post:
     content:
       application/json:
         schema:
-          $ref "../requestBodies/flight.yaml"
+          anyOf:
+            $ref: "../requestBodies/flight.yaml"
       application/xml:
         schema:
-          $ref "../requestBodies/flight.yaml"
+          anyOf:
+            $ref: "../requestBodies/flight.yaml"
   responses:
     200:
       description: "Successful operation"
