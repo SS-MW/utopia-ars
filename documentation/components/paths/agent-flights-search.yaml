@@ -1,5 +1,5 @@
 ---
-get:
+post:
   tags:
   - "Agent"
   summary: "Return a list of flights based on parameters"

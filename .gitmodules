@@ -4,3 +4,8 @@
 [submodule "utopia-counter"]
 	path = utopia-counter
 	url = https://github.com/ash-abbas-smooth/utopia-counter.git
+	branch = master
+[submodule "utopia-online"]
+	path = utopia-online
+	url = https://github.com/timothy-breitenfeldt/utopia-online.git
+	branch = master

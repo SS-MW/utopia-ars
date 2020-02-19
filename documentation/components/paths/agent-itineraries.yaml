@@ -26,6 +26,7 @@ get:
       description: "invalid operation"
     401:
       description: "Access token is missing or invalid"
+
 post:
   tags:
   - "Agent"

@@ -1,5 +1,5 @@
 ---
-get:
+post:
   tags:
   - "Online"
   summary: "Return a list of flights based on query parameters."

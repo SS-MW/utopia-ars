@@ -32,7 +32,7 @@ get:
     404:
       description: "itinerary not found"
 
-put:
+delete:
   tags:
   - "Counter"
   summary: "Update the status of an itinerary to canceled"
