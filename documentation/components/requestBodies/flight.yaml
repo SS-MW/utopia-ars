@@ -1,9 +1,6 @@
 ---
 type: object
 properties:
-  id:
-    type: integer
-    format: int64
   departure_date:
     type: string
     format: date
