@@ -1,6 +1,9 @@
 [submodule "utopia-agent"]
 	path = utopia-agent
 	url = https://github.com/SS-MW/utopia-agent.git
+[submodule "utopia-counter"]
+	path = utopia-counter
+	url = https://github.com/ash-abbas-smooth/utopia-counter.git
 	branch = master
 [submodule "utopia-online"]
 	path = utopia-online
