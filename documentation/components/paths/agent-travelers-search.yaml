@@ -1,5 +1,5 @@
 ---
-get:
+post:
   tags:
   - "Agent"
   summary: "Return a list of travelers in the database based on email and phone number filters"
