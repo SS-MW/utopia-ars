@@ -3,7 +3,7 @@ post:
   tags:
   - "Counter"
   summary: "Return a list of flights based on parameters"
-  operationId: "post-agent-flights"
+  operationId: "post-counter-flights"
   consumes:
   - "application/xml"
   - "application/json"

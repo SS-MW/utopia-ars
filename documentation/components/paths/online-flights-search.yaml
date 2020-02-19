@@ -1,9 +1,9 @@
 ---
 post:
-  tags:
+  tags: "Online"
   - "Search"
   summary: "Return a list of flights based on parameters"
-  operationId: "post-agent-flights"
+  operationId: "post-online-flights"
   consumes:
   - "application/xml"
   - "application/json"
