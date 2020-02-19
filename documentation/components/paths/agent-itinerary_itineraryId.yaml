@@ -32,11 +32,11 @@ get:
     404:
       description: "itinerary not found"
 
-put:
+delete:
   tags:
   - "Agent"
   summary: "Update the status of an itinerary to canceled"
-  description: "Update the status for all tickets associated with the itinerary to canceled."
+  description: "Update the status for all tickets associated with the itinerary to canceled. This is a soft delete, so the user will no longer be able to view "
   operationId: "put-agent-itineraries_itineraryId"
   consumes:
   - "application/xml"
