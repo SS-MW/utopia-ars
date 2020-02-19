@@ -7,22 +7,16 @@ post:
   produces:
   - "application/xml"
   - "application/json"
-  parameters:
-    - in: "query"
-      name: email
-      description: "Traveler's email address."
-      schema:
-        type: string
-    - in: "query"
-      name: phone
-      description: "Traveler's phone number"
-      schema:
-        type: string
-    - in: "query"
-      name: last_name
-      description: "Traveler's last name"
-      schema:
-        type: string
+  requestBody:
+    description: "Search for a traveler based on provided parameters. At least one parameter is required"
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: "../requestBodies/traveler.yaml"
+      application/xml:
+        schema:
+          $ref: "../requestBodies/traveler.yaml"
   responses:
     200:
       description: "successful operation"
