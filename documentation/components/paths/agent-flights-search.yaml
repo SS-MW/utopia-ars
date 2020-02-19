@@ -11,7 +11,7 @@ post:
   - "application/xml"
   - "application/json"
   requestBody:
-    description: "Search for spacific flights based on provided parameters."
+    description: "Search for spacific flights based on provided parameters. Provide at least 1 search parameter."
     required: true
     content:
       application/json:
