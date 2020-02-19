@@ -1,7 +1,6 @@
 ---
 post:
   tags: "Online"
-  - "Search"
   summary: "Return a list of flights based on parameters"
   operationId: "post-online-flights"
   consumes:
