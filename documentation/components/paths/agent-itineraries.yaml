@@ -2,8 +2,7 @@
 get:
   tags:
   - "Agent"
-  summary: "Return a list of all itineraries of the user's agency in the database"
-  description: ""
+  summary: "Return a list of all itineraries of the user's agency in the database"  
   operationId: "get-agent-itineraries"
   produces:
   - "application/xml"
@@ -23,15 +22,16 @@ get:
             items:
               $ref: "../definitions/itinerary.yaml"
     400:
-      description: "invalid operation"
+      description: "Invalid operation"
     401:
       description: "Access token is missing or invalid"
+    404:
+      description: "Itinerary not found"
 
 post:
   tags:
   - "Agent"
   summary: "Create a new itinerary from agent"
-  description: "Create a new itinerary record"
   operationId: "post-agent-itineraries"
   consumes:
   - "application/xml"
@@ -40,12 +40,12 @@ post:
   - "application/xml"
   - "application/json"
   responses:
-    "201":
+    201:
       description: "Itinerary created"
       content:
         application/json:
           schema:
-            type: object 
+            type: object
             required:
             - id
             description: "The Id of the created itinerary"
@@ -57,7 +57,7 @@ post:
               id: 0
         application/xml:
           schema:
-            type: object 
+            type: object
             required:
             - id
             description: "The Id of the created itinerary"
@@ -72,7 +72,7 @@ post:
     403:
       description: "Access token is missing or invalid"
   requestBody:
-    description: "Create a new online user account."
+    description: "Create a new itinerary"
     required: true
     content:
       application/json:
