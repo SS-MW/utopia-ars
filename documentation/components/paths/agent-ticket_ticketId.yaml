@@ -3,7 +3,6 @@ get:
   tags:
   - "Agent"
   summary: "Return a ticket by ticket id"
-  description: "Returns ticket information by ticket id"
   operationId: "get-agent-ticket_ticketId"
   produces:
   - "application/xml"
@@ -28,11 +27,13 @@ get:
           schema:
             $ref: "../definitions/ticket.yaml"
     400:
-      description: "Invalid ID supplied."
+      description: "Invalid ID supplied"
+    401:
+      description: "Access token is missing"
     403:
-      description: "Access token is missing or invalid"
+      description: "Access token is invalid"
     404:
-      description: "Ticket not found."
+      description: "Ticket not found"
 
 delete:
   tags:
