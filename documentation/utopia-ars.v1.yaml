@@ -37,9 +37,9 @@ paths:
 
   /agent/itineraries:
     $ref: "components/paths/agent-itineraries.yaml"
-  /agent/itineraries?id={itinerary_id}:
+  /agent/itineraries/{id}:
     $ref: "components/paths/agent-itinerary_itineraryId.yaml"
-  /agent/itinerary/{itinerary_id}/tickets?id{ticket_id}:
+  /agent/itineraries/{itinerary_id}/ticket/{id}:
     $ref: "components/paths/agent-itinerary-tickets_ticketId.yaml"
   /agent/itinerary/{itinerary_id}/agency?id={agency_id}:
     $ref: "components/paths/agent-itinerary-agency_agencyId.yaml"
