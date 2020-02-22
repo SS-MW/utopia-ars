@@ -2,7 +2,7 @@
 get:
   tags:
   - "Agent"
-  summary: "Return a list of all itineraries of the user's agency in the database"  
+  summary: "Return a list of all itineraries of the user's agency in the database"
   operationId: "get-agent-itineraries"
   produces:
   - "application/xml"
@@ -24,9 +24,9 @@ get:
     400:
       description: "Invalid operation"
     401:
-      description: "Access token is missing or invalid"
-    404:
-      description: "Itinerary not found"
+      description: "Access token is missing"
+    403:
+      description: "Access token is invalid"
 
 post:
   tags:
@@ -69,8 +69,11 @@ post:
               id: 0
     400:
       description: "Invalid parameter posted"
+    401:
+      description: "Access token is missing"
     403:
-      description: "Access token is missing or invalid"
+      description: "Access token is invalid"
+
   requestBody:
     description: "Create a new itinerary"
     required: true
