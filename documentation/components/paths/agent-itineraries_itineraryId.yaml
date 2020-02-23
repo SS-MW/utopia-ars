@@ -16,6 +16,7 @@ get:
     schema:
       type: integer
       format: int64
+    example: "/agent/itineraries/9"
 
   responses:
     200:
@@ -28,9 +29,13 @@ get:
           schema:
             $ref: "../definitions/itinerary.yaml"
     400:
-      description: "Invalid id supplied"
+      description: "Invalid parameter supplied"
+    401:
+      description: "Access token is missing"
+    403:
+      description: "Access token is invalid"
     404:
-      description: "itinerary not found"
+      description: "Itinerary not found"
 
 delete:
   tags:
@@ -52,13 +57,16 @@ delete:
     schema:
       type: integer
       format: int64
+    example: "/agent/itineraries/9"
   responses:
     204:
-      description: "successful operation, no content"
+      description: "Success"
     400:
-      description: "Invalid id supplied"
-    403:
+      description: "Invalid parameter supplied"
+    401:
       description: "Access token is missing or invalid"
+    403:
+      description: "Access token is invalid"
     404:
       description: "itinerary not found"
 ...
