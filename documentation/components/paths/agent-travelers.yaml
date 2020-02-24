@@ -42,16 +42,7 @@ get:
       description: "Invalid parameter posted"
     403:
       description: "Access token is missing or invalid"
-  requestBody:
-    description: "Get traveler by ID"
-    required: true
-    content:
-      application/json:
-        schema:
-          $ref: "../requestBodies/traveler.yaml"
-      application/xml:
-        schema:
-          $ref: "../requestBodies/traveler.yaml"
+
 post:
   tags:
   - "Agent"
