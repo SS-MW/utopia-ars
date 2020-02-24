@@ -43,6 +43,8 @@ paths:
   /agent/tickets/{id}:
     $ref: "components/paths/agent-tickets_ticketId.yaml"
 
+  /agent/travelers:
+    $ref: "components/paths/agent-travelers.yaml"
   /agent/travelers/{id}:
     $ref: "components/paths/agent-travelers.yaml"
   /agent/travelers/search:
