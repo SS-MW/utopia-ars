@@ -26,15 +26,15 @@ get:
                 format: int64
             example:
               id: 0
-              first_name: "fname",
-              last_name: "lname",
-              dob: "2020-02-24T21:27:26.695Z",
-              phone: "xxx-xxx-xxxx",
-              email: "user@example.com",
-              street: "string",
-              city: "string",
-              state: "string",
-              postal_code: "string",
+              first_name: "fname"
+              last_name: "lname"
+              dob: "2020-02-24T21:27:26.695Z"
+              phone: "xxx-xxx-xxxx"
+              email: "user@example.com"
+              street: "string"
+              city: "string"
+              state: "string"
+              postal_code: "string"
               country: "string"
 
         application/xml:
