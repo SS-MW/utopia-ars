@@ -19,7 +19,7 @@ get:
             type: object
             required:
             - id
-            description: "The traveler record by id"
+            description: "Get all traveler records associated with agency id "
             properties:
               id:
                 type: integer
@@ -53,3 +53,4 @@ get:
       description: "Invalid parameter posted"
     403:
       description: "Access token is missing or invalid"
+...
