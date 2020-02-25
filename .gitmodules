@@ -9,3 +9,7 @@
 	path = utopia-online
 	url = https://github.com/timothy-breitenfeldt/utopia-online.git
 	branch = master
+[submodule "utopia-user"]
+	path = utopia-user
+	url = https://github.com/timothy-breitenfeldt/utopia-user.git
+	branch = master
