@@ -12,14 +12,14 @@ get:
   - "application/json"
   responses:
     200:
-      description: "Get traveler"
+      description: "Get travelers"
       content:
         application/json:
           schema:
             type: object
             required:
             - id
-            description: "Get all traveler records associated with agency id "
+            description: "Get traveler record id "
             properties:
               id:
                 type: integer
