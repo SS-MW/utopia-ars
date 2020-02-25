@@ -2,7 +2,7 @@
 get:
   tags:
   - "Agent"
-  summary: "Get traveler record by id"
+  summary: "Get traveler records associated with agency id"
   operationId: "get-Agent-travelers"
   consumes:
   - "application/xml"
