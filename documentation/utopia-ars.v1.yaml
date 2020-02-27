@@ -17,7 +17,7 @@ info:
     * Travel agents
     * Airline counter agents.
 servers:
-  - url: "http://localhost:3000"
+  - url: " https://v2z3jctj5b.execute-api.us-east-1.amazonaws.com/PROD"
 
 paths:
 
