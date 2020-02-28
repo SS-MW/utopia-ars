@@ -17,7 +17,7 @@ info:
     * Travel agents
     * Airline counter agents.
 servers:
-  - url: "http://localhost:3000"
+  - url: " https://v2z3jctj5b.execute-api.us-east-1.amazonaws.com/PROD/api"
 
 paths:
 
@@ -46,7 +46,7 @@ paths:
   /agent/travelers:
     $ref: "components/paths/agent-travelers.yaml"
   /agent/travelers/{id}:
-    $ref: "components/paths/agent-travelers.yaml"
+    $ref: "components/paths/agent-travelers_id.yaml"
   /agent/travelers/search:
     $ref: "components/paths/agent-travelers-search.yaml"
   /agent/flights/search:

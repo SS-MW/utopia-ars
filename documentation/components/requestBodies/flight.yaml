@@ -22,6 +22,6 @@ example:
   arrival_date: 2020-01-13
   destination: destination
   origin: origin
-  capasity: 0
+  capacity: 0
   price: 0.0
 ...
