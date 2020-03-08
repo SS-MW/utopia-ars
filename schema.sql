@@ -53,6 +53,7 @@ CREATE TABLE `traveler` (
   `state` VARCHAR(45) NULL,
   `city` VARCHAR(45) NULL,
   `postal_code` VARCHAR(45) NULL,
+  UNIQUE INDEX `email_UNIQUE` (`email` ASC),
   PRIMARY KEY (`id`));
 
 -- TRAVEL_AGENCY --
