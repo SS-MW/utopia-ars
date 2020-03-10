@@ -70,7 +70,7 @@ CREATE TABLE `travel_agency` (
   `id` BIGINT(11) NOT NULL AUTO_INCREMENT,
   `email` VARCHAR(45) NOT NULL,
   `password` VARCHAR(255) NOT NULL,
-  `role` ENUM('TRAVELER', 'TRAVEL_AGENT', 'COUNTER') NOT NULL,
+  `role` ENUM('TRAVELER', 'AGENT', 'COUNTER') NOT NULL,
   `agency_id` BIGINT(11) NULL,
   `first_name` VARCHAR(45) NULL,
   `last_name` VARCHAR(45) NULL,
