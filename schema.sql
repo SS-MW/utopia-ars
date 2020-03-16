@@ -53,6 +53,7 @@ CREATE TABLE `traveler` (
   `state` VARCHAR(45) NULL,
   `city` VARCHAR(45) NULL,
   `postal_code` VARCHAR(45) NULL,
+  UNIQUE INDEX `email_UNIQUE` (`email` ASC),
   PRIMARY KEY (`id`));
 
 -- TRAVEL_AGENCY --
@@ -68,8 +69,8 @@ CREATE TABLE `travel_agency` (
   CREATE TABLE `user` (
   `id` BIGINT(11) NOT NULL AUTO_INCREMENT,
   `email` VARCHAR(45) NOT NULL,
-  `password` VARCHAR(45) NOT NULL,
-  `role` ENUM('TRAVELER', 'TRAVEL_AGENT', 'COUNTER') NOT NULL,
+  `password` VARCHAR(255) NOT NULL,
+  `role` ENUM('TRAVELER', 'AGENT', 'COUNTER') NOT NULL,
   `agency_id` BIGINT(11) NULL,
   `first_name` VARCHAR(45) NULL,
   `last_name` VARCHAR(45) NULL,

@@ -10,6 +10,11 @@
 	path = utopia-user
 	url = https://github.com/timothy-breitenfeldt/utopia-user.git
 	branch = master
+[submodule "utopia-ui"]
+	path = utopia-ui
+	url = https://github.com/timothy-breitenfeldt/utopia-ui.git
+	branch = master
 [submodule "utopia-agent"]
 	path = utopia-agent
 	url = https://github.com/SS-MW/utopia-agent.git
+	branch = master
