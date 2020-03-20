@@ -6,9 +6,11 @@ Parameters:
     Description: Name of an existing EC2 KeyPair to enable SSH access to the ECS instances.
   VpcId:
     Type: AWS::EC2::VPC::Id
+    Default: "vpc-8e022cf4"
     Description: Select a VPC that allows instances access to the Internet.
   SubnetId:
     Type: List<AWS::EC2::Subnet::Id>
+    Default: "subnet-c5acb399,subnet-df4490d1,subnet-f1e449bc,subnet-f34a52dd,subnet-fa7253c4,subnet-fdddcf9a"
     Description: Select at least two subnets in your selected VPC.
   DesiredCapacity:
     Type: Number
